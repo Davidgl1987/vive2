@@ -71,7 +71,7 @@ describe('useAppStore', () => {
     const initialCompletedChallenges = useAppStore.getState().completedChallenges.length;
     useAppStore.getState().setChallengeGoal(10);
 
-    for (let index = 1; index <= 9; index += 1) {
+    for (let index = 1; index <= 10; index += 1) {
       useAppStore.getState().saveMemory(buildMemory(index));
     }
 
@@ -109,22 +109,42 @@ describe('useAppStore', () => {
     expect(migrated.pendingCelebrationChallengeId).toBeUndefined();
   });
 
-  it('upgrades the original demo state with the completed challenge mock', () => {
-    const originalMemory = { ...buildMemory(1), id: 'memory_seed_001' };
+  it('removes historical demo data without deleting user memories', () => {
+    const seedMemory = { ...buildMemory(1), id: 'memory_seed_001' };
+    const userMemory = buildMemory(2);
     const migrated = migrateAppStore({
-      memories: [originalMemory],
+      onboardingCompleted: false,
+      preferences: {
+        coupleName: 'Cris y David',
+        partnerOneName: 'Cris',
+        partnerTwoName: 'David',
+      },
+      memories: [seedMemory, userMemory],
       activeChallenge: {
         id: 'challenge_original',
         goal: 30,
-        memoryIds: [originalMemory.id],
-        startedAt: originalMemory.createdAt,
+        memoryIds: [seedMemory.id, userMemory.id],
+        startedAt: seedMemory.createdAt,
       },
-      completedChallenges: [],
-    }, 3) as ReturnType<typeof createInitialAppStoreState>;
+      completedChallenges: [{
+        id: 'challenge_seed_completed_001',
+        goal: 10,
+        memoryIds: [seedMemory.id],
+        startedAt: seedMemory.createdAt,
+        completedAt: seedMemory.updatedAt,
+      }],
+      pendingCelebrationChallengeId: 'challenge_seed_completed_001',
+    }, 4) as ReturnType<typeof createInitialAppStoreState>;
 
-    expect(migrated.memories).toHaveLength(11);
-    expect(migrated.completedChallenges[0]?.memoryIds).toHaveLength(10);
-    expect(migrated.activeChallenge.memoryIds).toHaveLength(1);
+    expect(migrated.memories.map((memory) => memory.id)).toEqual([userMemory.id]);
+    expect(migrated.completedChallenges).toHaveLength(0);
+    expect(migrated.activeChallenge.memoryIds).toEqual([userMemory.id]);
+    expect(migrated.pendingCelebrationChallengeId).toBeUndefined();
+    expect(migrated.preferences).toEqual({
+      coupleName: '',
+      partnerOneName: '',
+      partnerTwoName: '',
+    });
   });
 
   it('moves an agenda item to confirmed when both partners accept plan and date', () => {
@@ -191,10 +211,11 @@ describe('useAppStore', () => {
     const nextState = useAppStore.getState();
     expect(nextState.onboardingCompleted).toBe(false);
     expect(nextState.activeChallenge.goal).toBe(30);
-    expect(nextState.activeChallenge.memoryIds).toHaveLength(1);
-    expect(nextState.completedChallenges).toHaveLength(1);
-    expect(nextState.completedChallenges[0]?.id).toBe('challenge_seed_completed_001');
-    expect(nextState.preferences.partnerOneName).toBe('Cris');
+    expect(nextState.activeChallenge.memoryIds).toHaveLength(0);
+    expect(nextState.completedChallenges).toHaveLength(0);
+    expect(nextState.memories).toHaveLength(0);
+    expect(nextState.preferences.partnerOneName).toBe('');
+    expect(nextState.reminderSettings.enabled).toBe(false);
     expect(nextState.customPlans).toHaveLength(0);
     expect(nextState.agendaItems).toHaveLength(0);
     expect(nextState.individualModePromoDismissed).toBe(false);

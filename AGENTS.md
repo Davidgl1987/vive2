@@ -75,7 +75,6 @@ Nota:
 - Rutas: [src/app/router.tsx](./src/app/router.tsx)
 - Estado global: [src/store/useAppStore.ts](./src/store/useAppStore.ts)
 - Catalogo de planes: [src/data/plans.ts](./src/data/plans.ts)
-- Lugares mock: [src/data/nearbyPlaces.ts](./src/data/nearbyPlaces.ts)
 - Estilos globales: [src/styles/globals.css](./src/styles/globals.css)
 - Shell mobile y bottom nav:
   [src/components/layout/AppShell.tsx](./src/components/layout/AppShell.tsx)
@@ -90,7 +89,6 @@ Nota:
 - `/home`
 - `/plans`
 - `/plans/:planId`
-- `/plans/:planId/nearby`
 - `/plans/:planId/complete`
 - `/memories`
 - `/memories/:memoryId`
@@ -110,7 +108,7 @@ Nota:
 
 ## Limitaciones actuales
 
-- Los lugares cercanos son mock y no salen de una API real.
+- Las sugerencias de lugares abren busquedas externas en Google Maps; no dependen de una API de Places.
 - El album es una pantalla MVP con CTA, no genera PDF todavia.
 - Compartir usa Web Share o clipboard como fallback web.
 - Recordatorios se guardan en estado local, pero no disparan notificaciones nativas reales aun.
@@ -120,7 +118,6 @@ Nota:
 
 Elegir uno de estos frentes antes de abrir demasiados a la vez:
 
-1. Integrar Places reales para `/plans/:planId/nearby`.
-2. Preparar Capacitor real con plugins y builds iOS/Android.
-3. Añadir capa de servicios y persistencia backend para recuerdos y fotos.
-4. Implementar exportacion PDF del album.
+1. Preparar Capacitor real con plugins y builds iOS/Android.
+2. Añadir capa de servicios y persistencia backend para recuerdos y fotos.
+3. Implementar exportacion PDF del album.

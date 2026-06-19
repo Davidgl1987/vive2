@@ -38,7 +38,7 @@ export const PartnerNameFields = ({
     <NameField
       colorClass="bg-blush"
       label={messages.common.placeholders.firstPerson}
-      placeholder={messages.common.placeholders.alex}
+      placeholder={messages.common.placeholders.david}
       registration={partnerOneRegistration}
     />
     <div className="flex justify-center">
@@ -54,7 +54,7 @@ export const PartnerNameFields = ({
     <NameField
       colorClass="bg-lightBlue"
       label={messages.common.placeholders.secondPerson}
-      placeholder={messages.common.placeholders.maria}
+      placeholder={messages.common.placeholders.cris}
       registration={partnerTwoRegistration}
     />
   </div>

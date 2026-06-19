@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { useAppStore } from '../../store/useAppStore';
 import { BottomNav } from './BottomNav';
-import { DebugMenu } from './DebugMenu';
 import { MobileFrame } from './MobileFrame';
 import { PageTransition } from './PageTransition';
 import { ScrollToTop } from './ScrollToTop';
@@ -13,7 +12,6 @@ export const AppShell = () => {
   return (
     <div className={themeClass}>
       <ScrollToTop />
-      <DebugMenu />
       <MobileFrame withNav>
         <PageTransition>
           <Outlet />

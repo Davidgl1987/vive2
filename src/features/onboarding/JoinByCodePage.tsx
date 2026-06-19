@@ -99,7 +99,7 @@ export const JoinByCodePage = () => {
                 <p className="text-sm font-semibold text-blush">{error}</p>
               ) : (
                 <p className="text-sm leading-6 text-mist">
-                  En este MVP local, si llegas desde una invitación con enlace también reutilizamos la configuración que ya preparó la otra persona.
+                  Si llegas desde un enlace de invitación, reutilizaremos la configuración que ya preparó la otra persona.
                 </p>
               )}
 

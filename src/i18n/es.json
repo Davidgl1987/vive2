@@ -13,8 +13,8 @@
     "placeholders": {
       "firstPerson": "Primera persona",
       "secondPerson": "Segunda persona",
-      "alex": "Alex",
-      "maria": "Maria"
+      "david": "David",
+      "cris": "Cris"
     },
     "emptyDate": "Sin fecha"
   },
@@ -133,7 +133,7 @@
       "email": "Email",
       "password": "Contraseña",
       "emailAction": "Entrar o crear cuenta",
-      "legal": "La conexión real de acceso se activará cuando conectemos el backend.",
+      "legal": "Al continuar, aceptas guardar los datos necesarios para acceder a tu espacio de pareja.",
       "next": {
         "title": "¿Cómo quieres empezar?",
         "subtitle": "La cuenta ya está preparada para continuar.",
@@ -411,16 +411,6 @@
       "agenda": "Agenda",
       "memories": "Momentos",
       "profile": "Perfil"
-    }
-  },
-  "store": {
-    "defaults": {
-      "coupleName": "Cris y David",
-      "partnerOneName": "Cris",
-      "partnerTwoName": "David",
-      "seedLocationName": "Parque del Retiro",
-      "seedLocationAddress": "Madrid",
-      "seedNote": "Una noche tranquila, muchas risas y cero prisa. Justo lo que necesitábamos."
     }
   },
   "invite": {

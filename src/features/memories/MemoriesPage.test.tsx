@@ -3,15 +3,29 @@ import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { createInitialAppStoreState } from '../../store/appStore.defaults';
 import { useAppStore } from '../../store/useAppStore';
+import type { CompletedPlan } from '../../types/memory';
 import { MemoriesPage } from './MemoriesPage';
 
 describe('MemoriesPage', () => {
   beforeEach(() => {
     localStorage.clear();
     const initialState = createInitialAppStoreState();
-    const memory = initialState.memories[0];
+    const memory: CompletedPlan = {
+      id: 'memory_completed',
+      coupleId: initialState.coupleId,
+      planId: 'plan_001',
+      planTitle: 'Picnic bajo las estrellas',
+      date: '2026-06-30T12:00:00.000Z',
+      photos: [],
+      note: 'Un recuerdo de prueba',
+      rating: 5,
+      sharedCount: 0,
+      createdAt: '2026-06-30T12:00:00.000Z',
+      updatedAt: '2026-06-30T12:00:00.000Z',
+    };
     useAppStore.setState({
       ...initialState,
+      memories: [memory],
       activeChallenge: {
         ...initialState.activeChallenge,
         id: 'challenge_active',

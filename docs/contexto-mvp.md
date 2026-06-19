@@ -25,13 +25,16 @@ Hay dos bloques:
 El estado vive en [src/store/useAppStore.ts](/Users/david/Developer/proyectos-personales/planes-pareja/src/store/useAppStore.ts).
 
 Persiste en `localStorage`:
+- identificador local de la pareja
 - onboarding completado
 - preferencias de la pareja
+- reto activo y retos completados
 - planes desbloqueados
 - recuerdos
 - recordatorios
+- agenda y planes personalizados
 
-Incluye un recuerdo semilla para que la home y el album no arranquen vacios.
+El estado inicial esta limpio: no incluye perfiles, retos, recuerdos, agenda ni planes personalizados de demostracion. La migracion v5 retira tambien los datos semilla de instalaciones anteriores sin borrar contenido creado por el usuario.
 
 ### Datos
 
@@ -42,8 +45,6 @@ Decisiones relevantes:
 - los planes son tipados
 - las imagenes usan URLs remotas
 - hay una distincion simple entre planes desbloqueados y premium
-
-Los lugares cercanos mock viven en [src/data/nearbyPlaces.ts](/Users/david/Developer/proyectos-personales/planes-pareja/src/data/nearbyPlaces.ts).
 
 ### Pantallas
 
@@ -59,9 +60,6 @@ Planes:
 - [src/features/plans/PlansPage.tsx](/Users/david/Developer/proyectos-personales/planes-pareja/src/features/plans/PlansPage.tsx)
 - [src/features/plans/PlanDetailPage.tsx](/Users/david/Developer/proyectos-personales/planes-pareja/src/features/plans/PlanDetailPage.tsx)
 - [src/features/plans/CompletePlanPage.tsx](/Users/david/Developer/proyectos-personales/planes-pareja/src/features/plans/CompletePlanPage.tsx)
-
-Nearby:
-- [src/features/nearby/NearbyPlacesPage.tsx](/Users/david/Developer/proyectos-personales/planes-pareja/src/features/nearby/NearbyPlacesPage.tsx)
 
 Recuerdos:
 - [src/features/memories/MemoriesPage.tsx](/Users/david/Developer/proyectos-personales/planes-pareja/src/features/memories/MemoriesPage.tsx)
@@ -132,11 +130,12 @@ Filesystem y el relay temporal de fotografias entre los dos moviles.
 
 ### Integraciones externas desacopladas
 
-De momento hay placeholders o mocks para:
-- nearby places
+De momento hay implementaciones provisionales para:
 - compartir
 - album/PDF
 - notificaciones
+
+El recorrido de onboarding usa ejemplos visuales aislados para explicar la app. Esos ejemplos no se guardan en el store ni aparecen al entrar en la aplicacion real.
 
 Eso permite evolucionar a servicios reales sin desmontar la UI.
 
@@ -173,7 +172,7 @@ Atacar primero:
 Atacar primero:
 1. definir esquema persistente de `CompletedPlan`, preferencias y fotos
 2. crear `services/storageService.ts`
-3. mover seeded data a estrategia controlada
+3. sustituir gradualmente `localStorage` por los repositorios definidos en el documento de sincronizacion
 
 ### Si el objetivo es performance
 

@@ -1,7 +1,6 @@
 import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom';
 import { ErrorBoundary } from '../components/ErrorBoundary';
 import { AppShell } from '../components/layout/AppShell';
-import { MobileFrame } from '../components/layout/MobileFrame';
 import { AgendaPage } from '../features/agenda/AgendaPage';
 import { AlbumPage } from '../features/album/AlbumPage';
 import { HomePage } from '../features/home/HomePage';
@@ -24,12 +23,6 @@ const RootRedirect = () => {
   const onboardingCompleted = useAppStore((state) => state.onboardingCompleted);
   return <Navigate replace to={onboardingCompleted ? '/home' : '/onboarding'} />;
 };
-
-const PublicWrapper = () => (
-  <MobileFrame>
-    <Outlet />
-  </MobileFrame>
-);
 
 const baseName = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
 

@@ -3,17 +3,41 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { createInitialAppStoreState } from '../../store/appStore.defaults';
 import { useAppStore } from '../../store/useAppStore';
+import type { CompletedPlan } from '../../types/memory';
 import { findPlanById } from '../../utils/plans';
 import { MemoryDetailPage } from './MemoryDetailPage';
+
+const memoryId = 'memory_detail_test';
 
 describe('MemoryDetailPage', () => {
   beforeEach(() => {
     localStorage.clear();
-    useAppStore.setState(createInitialAppStoreState());
+    const initialState = createInitialAppStoreState();
+    const memory: CompletedPlan = {
+      id: memoryId,
+      coupleId: initialState.coupleId,
+      planId: 'plan_001',
+      planTitle: 'Picnic bajo las estrellas',
+      date: '2026-06-17T18:00:00.000Z',
+      photos: [],
+      note: 'Un recuerdo de prueba',
+      rating: 5,
+      sharedCount: 0,
+      createdAt: '2026-06-17T18:00:00.000Z',
+      updatedAt: '2026-06-17T18:00:00.000Z',
+    };
+    useAppStore.setState({
+      ...initialState,
+      memories: [memory],
+      activeChallenge: {
+        ...initialState.activeChallenge,
+        memoryIds: [memory.id],
+        startedAt: memory.createdAt,
+      },
+    });
   });
 
   it('updates a partner photo without counting the memory again', async () => {
-    const memoryId = useAppStore.getState().activeChallenge.memoryIds[0];
     const initialProgress = useAppStore.getState().activeChallenge.memoryIds.length;
 
     render(
@@ -48,7 +72,6 @@ describe('MemoryDetailPage', () => {
 
   it('removes the current partner photo and falls back to the plan cover', async () => {
     const state = useAppStore.getState();
-    const memoryId = state.activeChallenge.memoryIds[0];
     const memory = state.memories.find((item) => item.id === memoryId)!;
     const ownPhoto = 'data:image/png;base64,own-photo';
     const planCover = findPlanById(state.customPlans, memory.planId)?.cover;

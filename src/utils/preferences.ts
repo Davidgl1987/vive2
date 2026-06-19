@@ -3,8 +3,8 @@ import type { CouplePreferences } from '../types/plan';
 const splitCoupleName = (coupleName: string) => {
   const [first, second] = coupleName.split(/\s+y\s+/i);
   return {
-    partnerOneName: first?.trim() || 'Alex',
-    partnerTwoName: second?.trim() || 'Maria',
+    partnerOneName: first?.trim() || 'David',
+    partnerTwoName: second?.trim() || 'Cris',
   };
 };
 

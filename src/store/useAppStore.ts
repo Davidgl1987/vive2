@@ -4,7 +4,7 @@ import { createId } from '../utils/id';
 import { validateInviteCodeInput } from '../utils/invite';
 import { createCustomPlan } from '../utils/plans';
 import { getNowIso } from '../utils/format';
-import { createInitialAppStoreState, createSeededChallengeState } from './appStore.defaults';
+import { createDefaultPreferences, createInitialAppStoreState } from './appStore.defaults';
 import { buildChallengeStateFromLegacy, createActiveChallenge } from './challengeState';
 import {
   buildInviteCode,
@@ -18,6 +18,53 @@ import type { AppState, AppStoreState } from './appStore.types';
 
 type LegacyPersistedState = Partial<AppStoreState> & {
   challengeGoal?: ChallengeGoal;
+};
+
+const LEGACY_SEED_MEMORY_PREFIX = 'memory_seed_';
+const LEGACY_SEED_CHALLENGE_ID = 'challenge_seed_completed_001';
+
+const removeLegacyDemoData = (state: LegacyPersistedState): LegacyPersistedState => {
+  const seedMemoryIds = new Set(
+    (state.memories ?? [])
+      .filter((memory) => memory.id.startsWith(LEGACY_SEED_MEMORY_PREFIX))
+      .map((memory) => memory.id),
+  );
+  const removeSeedMemoryIds = (memoryIds: string[]) =>
+    memoryIds.filter((memoryId) => !seedMemoryIds.has(memoryId));
+  const activeChallenge = state.activeChallenge
+    ? {
+        ...state.activeChallenge,
+        memoryIds: removeSeedMemoryIds(state.activeChallenge.memoryIds),
+      }
+    : undefined;
+  const completedChallenges = (state.completedChallenges ?? [])
+    .filter((challenge) => challenge.id !== LEGACY_SEED_CHALLENGE_ID)
+    .map((challenge) => ({
+      ...challenge,
+      memoryIds: removeSeedMemoryIds(challenge.memoryIds),
+    }))
+    .filter((challenge) => challenge.memoryIds.length > 0);
+  const preferencesAreLegacyDemo =
+    !state.onboardingCompleted &&
+    state.preferences?.partnerOneName === 'Cris' &&
+    state.preferences?.partnerTwoName === 'David';
+  const pendingCelebrationStillExists = completedChallenges.some(
+    (challenge) => challenge.id === state.pendingCelebrationChallengeId,
+  );
+
+  return {
+    ...state,
+    memories: (state.memories ?? []).filter((memory) => !seedMemoryIds.has(memory.id)),
+    activeChallenge:
+      activeChallenge && activeChallenge.memoryIds.length === 0 && seedMemoryIds.size > 0
+        ? createActiveChallenge(activeChallenge.goal)
+        : activeChallenge,
+    completedChallenges,
+    pendingCelebrationChallengeId: pendingCelebrationStillExists
+      ? state.pendingCelebrationChallengeId
+      : undefined,
+    preferences: preferencesAreLegacyDemo ? createDefaultPreferences() : state.preferences,
+  };
 };
 
 export const migrateAppStore = (persistedState: unknown, persistedVersion = 0) => {
@@ -35,15 +82,7 @@ export const migrateAppStore = (persistedState: unknown, persistedVersion = 0) =
         ),
         pendingCelebrationChallengeId: undefined,
       };
-  const isOriginalDemoState =
-    persistedVersion < 4 &&
-    memories.length === 1 &&
-    memories[0]?.id === 'memory_seed_001' &&
-    (migratedState.completedChallenges?.length ?? 0) === 0;
-
-  return isOriginalDemoState
-    ? { ...migratedState, ...createSeededChallengeState() }
-    : migratedState;
+  return persistedVersion < 5 ? removeLegacyDemoData(migratedState) : migratedState;
 };
 
 export const useAppStore = create<AppState>()(
@@ -377,10 +416,11 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'planes-pareja-store',
-      version: 4,
+      version: 5,
       migrate: migrateAppStore,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
+        coupleId: state.coupleId,
         onboardingCompleted: state.onboardingCompleted,
         preferences: state.preferences,
         activeChallenge: state.activeChallenge,
