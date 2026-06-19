@@ -40,6 +40,17 @@ export const formatDateKeyDayLabel = (dateKey: string) =>
     day: 'numeric',
   }).format(new Date(`${dateKey}T12:00:00`));
 
+export const formatDateKeyWeekdayLabel = (dateKey: string) =>
+  new Intl.DateTimeFormat('es-ES', {
+    weekday: 'short',
+  })
+    .format(new Date(`${dateKey}T12:00:00`))
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace('.', '')
+    .slice(0, 3)
+    .toLowerCase();
+
 export const titleCase = (value: string) =>
   value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
 

@@ -6,6 +6,7 @@ import {
   addDaysToDateKey,
   formatDateKeyDayLabel,
   formatDateKeyMonthLabel,
+  formatDateKeyWeekdayLabel,
   getDateKey,
   getTodayDateInput,
   formatLongDate,
@@ -106,7 +107,7 @@ export const ConfirmedPlansCalendar = ({
             return (
               <button
                 key={dateKey}
-                className={`relative flex h-[78px] min-w-0 flex-col items-center justify-center rounded-[18px] px-2 text-center transition ${selected
+                className={`relative flex h-[88px] min-w-0 flex-col items-center justify-center rounded-[18px] px-2 text-center transition ${selected
                   ? hasPlan
                     ? 'bg-primary text-surface shadow-soft'
                     : 'bg-eggshell text-ink shadow-[inset_0_0_0_1px_rgb(var(--color-text)/0.06)]'
@@ -127,7 +128,9 @@ export const ConfirmedPlansCalendar = ({
                 ) : null}
                 <span
                   className={`relative z-10 text-[11px] font-semibold uppercase tracking-[0.08em] ${selected
-                    ? 'text-surface/90'
+                    ? hasPlan
+                      ? 'text-surface/90'
+                      : 'text-mist'
                     : hasPlan
                       ? 'text-[rgb(var(--color-primary))]'
                       : 'text-[rgb(var(--color-muted)/0.62)]'
@@ -137,13 +140,27 @@ export const ConfirmedPlansCalendar = ({
                 </span>
                 <span
                   className={`relative z-10 mt-1 px-2.5 py-1 text-[1.6rem] font-extrabold leading-none ${selected
-                    ? 'text-surface'
+                    ? hasPlan
+                      ? 'text-surface'
+                      : 'text-ink'
+                    : hasPlan
+                      ? 'text-[rgb(var(--color-primary))]'
+                      : 'text-ink'
+                    }`}
+                >
+                  {formatDateKeyDayLabel(dateKey)}
+                </span>
+                <span
+                  className={`relative z-10 text-[11px] font-semibold uppercase tracking-[0.08em] ${selected
+                    ? hasPlan
+                      ? 'text-surface/90'
+                      : 'text-mist'
                     : hasPlan
                       ? 'text-[rgb(var(--color-primary))]'
                       : 'text-[rgb(var(--color-muted)/0.62)]'
                     }`}
                 >
-                  {formatDateKeyDayLabel(dateKey)}
+                  {formatDateKeyWeekdayLabel(dateKey)}
                 </span>
               </button>
             );

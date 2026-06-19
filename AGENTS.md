@@ -25,6 +25,9 @@ Contexto operativo ampliado:
 Reset de producto y flujo recomendado:
 - [docs/product-reset.md](./docs/product-reset.md)
 
+Arquitectura de backend y sincronizacion local de fotos:
+- [docs/backend-data-sync.md](./docs/backend-data-sync.md)
+
 Politica de modelos y ahorro de tokens:
 - [docs/model-routing.md](./docs/model-routing.md)
 

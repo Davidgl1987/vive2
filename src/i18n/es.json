@@ -344,7 +344,9 @@
         "title": "Vuestras fotos",
         "description": "Añadid una foto de cada persona para sustituir la imagen genérica del plan.",
         "updatedTitle": "Foto actualizada",
-        "updatedMessage": "La foto de {name} ya forma parte de este recuerdo."
+        "updatedMessage": "La foto de {name} ya forma parte de este recuerdo.",
+        "removedTitle": "Foto eliminada",
+        "removedMessage": "Mostraremos la foto de tu pareja o, si no hay otra, la imagen original del plan."
       }
     },
     "joinByCode": {
@@ -363,7 +365,8 @@
     },
     "ownPlanPhotoButton": {
       "add": "Subir mi foto del plan",
-      "change": "Cambiar mi foto del plan"
+      "change": "Cambiar mi foto",
+      "remove": "Quitar mi foto"
     },
     "agendaAgreementCard": {
       "proposedBy": "Propuesto por {name}",

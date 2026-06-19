@@ -82,6 +82,23 @@ export const MemoryDetailPage = () => {
       }),
     });
   };
+  const handleRemoveOwnPhoto = () => {
+    const ownPhoto = memory.partnerPhotos?.[currentPartnerId];
+    if (!ownPhoto) return;
+
+    const partnerPhotos = { ...memory.partnerPhotos };
+    delete partnerPhotos[currentPartnerId];
+    saveMemory({
+      ...memory,
+      partnerPhotos,
+      photos: memory.photos.filter((photo) => photo !== ownPhoto),
+      updatedAt: new Date().toISOString(),
+    });
+    setFeedback({
+      title: messages.pages.memoryDetail.photos.removedTitle,
+      message: messages.pages.memoryDetail.photos.removedMessage,
+    });
+  };
   const partnerPhotos = Object.values(memory.partnerPhotos ?? {}).filter(Boolean) as string[];
   const planImage = findPlanById(customPlans, memory.planId)?.cover;
   const displayPhotos =
@@ -113,6 +130,7 @@ export const MemoryDetailPage = () => {
         <OwnPlanPhotoButton
           embedded
           hasPhoto={Boolean(memory.partnerPhotos?.[currentPartnerId])}
+          onRemovePhoto={handleRemoveOwnPhoto}
           onSelectPhoto={handleOwnPhoto}
         />
       </div>

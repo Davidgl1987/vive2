@@ -1,6 +1,11 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { formatLongDate, getTodayDateInput } from '../../utils/format';
+import {
+  formatDateKeyMonthLabel,
+  formatDateKeyWeekdayLabel,
+  formatLongDate,
+  getTodayDateInput,
+} from '../../utils/format';
 import { ConfirmedPlansCalendar } from './ConfirmedPlansCalendar';
 
 describe('ConfirmedPlansCalendar', () => {
@@ -18,6 +23,8 @@ describe('ConfirmedPlansCalendar', () => {
 
     const todayButton = screen.getByRole('button', { name: formatLongDate(today) });
     expect(todayButton).toBeEnabled();
+    expect(todayButton).toHaveTextContent(formatDateKeyMonthLabel(today));
+    expect(todayButton).toHaveTextContent(formatDateKeyWeekdayLabel(today));
 
     fireEvent.click(todayButton);
     expect(onSelectDate).toHaveBeenCalledWith(today);

@@ -126,6 +126,10 @@ Consecuencia:
 - la app funciona bien como demo local
 - no hay sincronizacion entre dispositivos
 
+La arquitectura acordada para sustituir esta persistencia local esta documentada en
+[backend-data-sync.md](./backend-data-sync.md). Define el modelo backend, SQLite,
+Filesystem y el relay temporal de fotografias entre los dos moviles.
+
 ### Integraciones externas desacopladas
 
 De momento hay placeholders o mocks para:
