@@ -5,6 +5,7 @@ import { OnboardingShowcase } from '../../components/illustrations/OnboardingSho
 import { MobileFrame } from '../../components/layout/MobileFrame';
 import { Button } from '../../components/ui/Button';
 import { messages } from '../../i18n';
+import { getPublicAssetUrl } from '../../utils/assets';
 
 const steps = [
   {
@@ -36,7 +37,7 @@ export const OnboardingPage = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="mb-10 inline-flex h-14 w-14 items-center justify-center rounded-[22px] bg-surface p-2 shadow-sm">
-            <img alt="Vive2" className="h-full w-full" src="/logo/vive2-icono-120x120.png" />
+            <img alt="Vive2" className="h-full w-full" src={getPublicAssetUrl('logo/vive2-icono-120x120.png')} />
           </div>
           <p className="mb-3 text-sm font-extrabold uppercase tracking-[0.24em] text-blush">
             {messages.common.appName}

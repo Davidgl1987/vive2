@@ -31,6 +31,8 @@ const PublicWrapper = () => (
   </MobileFrame>
 );
 
+const baseName = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -119,4 +121,4 @@ export const router = createBrowserRouter([
     element: <RootRedirect />,
     errorElement: <ErrorBoundary />,
   },
-]);
+], { basename: baseName });

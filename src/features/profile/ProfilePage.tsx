@@ -27,6 +27,7 @@ import { useAppStore } from '../../store/useAppStore';
 import type { PartnerId } from '../../types/plan';
 import { buildInviteJoinUrl, validateInviteCodeInput } from '../../utils/invite';
 import { normalizePreferences } from '../../utils/preferences';
+import { getPublicAssetUrl } from '../../utils/assets';
 
 export const ProfilePage = () => {
   const navigate = useNavigate();
@@ -206,7 +207,7 @@ export const ProfilePage = () => {
     <div className="space-y-5 pb-4">
       <header className="pt-2">
         <div className="inline-flex items-center gap-2 rounded-full bg-surface/80 py-1 pl-1 pr-3 shadow-[0_8px_22px_rgb(var(--color-overlay)/0.08)] backdrop-blur">
-          <img alt="Vive2" className="h-7 w-7" src="/logo/vive2-icono-72x72.png" />
+          <img alt="Vive2" className="h-7 w-7" src={getPublicAssetUrl('logo/vive2-icono-72x72.png')} />
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blush">Vive2</p>
         </div>
         <h1 className="mt-2 font-heading text-[2.25rem] font-bold leading-none text-ink">

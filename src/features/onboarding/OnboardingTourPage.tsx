@@ -30,6 +30,7 @@ import { interpolate, messages } from '../../i18n';
 import type { CompletedPlan } from '../../types/memory';
 import type { AgendaItem, CouplePreferences } from '../../types/plan';
 import { addDaysToDateKey, formatLongDate, getTodayDateInput } from '../../utils/format';
+import { getPublicAssetUrl } from '../../utils/assets';
 
 type TourSlide = {
   icon: LucideIcon;
@@ -123,7 +124,7 @@ export const OnboardingTourPage = () => {
       <div className="space-y-4">
         <header className="pt-2">
           <div className="inline-flex items-center gap-2 rounded-full bg-surface/80 py-1 pl-1 pr-3 shadow-[0_8px_22px_rgb(var(--color-overlay)/0.08)]">
-            <img alt={messages.common.brandAlt} className="h-7 w-7" src="/logo/vive2-icono-72x72.png" />
+            <img alt={messages.common.brandAlt} className="h-7 w-7" src={getPublicAssetUrl('logo/vive2-icono-72x72.png')} />
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blush">{messages.common.appName}</p>
           </div>
           <h2 className="mt-2 font-heading text-[2.25rem] font-bold leading-none text-ink">
