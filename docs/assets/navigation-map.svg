@@ -1,0 +1,52 @@
+<svg width="1120" height="560" viewBox="0 0 1120 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1120" height="560" rx="36" fill="#FAF3DD"/>
+  <path d="M0 358C122 312 232 355 355 333C527 301 628 202 789 249C944 294 1036 249 1120 184V560H0V358Z" fill="#B8F2E6" opacity="0.68"/>
+  <text x="56" y="72" font-family="Fraunces, Georgia, serif" font-size="34" font-weight="800" fill="#171923">Mapa de navegacion recomendado</text>
+  <text x="56" y="106" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="600" fill="#718096">Separar descubrir planes de organizar planes reduce repeticion y hace visible el reto de tener fechas cerradas.</text>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g font-family="Manrope, Arial, sans-serif" filter="url(#shadow)">
+    <rect x="80" y="170" width="180" height="230" rx="30" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="125" cy="218" r="22" fill="#FFA69E"/>
+    <text x="158" y="210" font-size="15" font-weight="800" fill="#171923">Inicio</text>
+    <text x="158" y="235" font-size="12" font-weight="600" fill="#718096">Estado actual</text>
+    <text x="110" y="288" font-size="13" font-weight="700" fill="#171923">- Proximo plan</text>
+    <text x="110" y="315" font-size="13" font-weight="700" fill="#171923">- Planes pendientes</text>
+    <text x="110" y="342" font-size="13" font-weight="700" fill="#171923">- Progreso reto</text>
+
+    <rect x="300" y="170" width="180" height="230" rx="30" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="345" cy="218" r="22" fill="#AED9E0"/>
+    <text x="378" y="210" font-size="15" font-weight="800" fill="#171923">Planes</text>
+    <text x="378" y="235" font-size="12" font-weight="600" fill="#718096">Descubrir</text>
+    <text x="330" y="288" font-size="13" font-weight="700" fill="#171923">- Catalogo</text>
+    <text x="330" y="315" font-size="13" font-weight="700" fill="#171923">- Filtros</text>
+    <text x="330" y="342" font-size="13" font-weight="700" fill="#171923">- Ideas propias</text>
+
+    <rect x="520" y="150" width="200" height="270" rx="34" fill="#171923" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="568" cy="205" r="24" fill="#FFA69E"/>
+    <text x="604" y="198" font-size="17" font-weight="800" fill="#FFFDf7">Agenda</text>
+    <text x="604" y="225" font-size="12" font-weight="700" fill="#B8F2E6">Nueva seccion clave</text>
+    <text x="552" y="287" font-size="13" font-weight="700" fill="#FFFDf7">- Cola de planes</text>
+    <text x="552" y="316" font-size="13" font-weight="700" fill="#FFFDf7">- Fecha cerrada</text>
+    <text x="552" y="345" font-size="13" font-weight="700" fill="#FFFDf7">- Pendientes de aceptar</text>
+    <text x="552" y="374" font-size="13" font-weight="700" fill="#FFFDf7">- Completar</text>
+
+    <rect x="760" y="170" width="180" height="230" rx="30" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="805" cy="218" r="22" fill="#FFA69E"/>
+    <text x="838" y="210" font-size="15" font-weight="800" fill="#171923">Recuerdos</text>
+    <text x="838" y="235" font-size="12" font-weight="600" fill="#718096">Lo vivido</text>
+    <text x="790" y="288" font-size="13" font-weight="700" fill="#171923">- Galeria</text>
+    <text x="790" y="315" font-size="13" font-weight="700" fill="#171923">- Album/libro</text>
+    <text x="790" y="342" font-size="13" font-weight="700" fill="#171923">- Compartir</text>
+  </g>
+
+  <g font-family="Manrope, Arial, sans-serif">
+    <rect x="390" y="460" width="340" height="54" rx="27" fill="#FFFDf7" stroke="#FFA69E" stroke-width="2"/>
+    <text x="430" y="493" font-size="14" font-weight="800" fill="#171923">Perfil queda fuera del flujo principal: ajustes, pareja, recordatorios</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#FAF3DD"/>
+  <text x="56" y="70" font-family="Fraunces, Georgia, serif" font-size="34" font-weight="800" fill="#171923">Wireframes simples del nuevo flujo</text>
+  <text x="56" y="104" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="600" fill="#718096">Una pantalla = una responsabilidad principal. Home informa, Agenda organiza, Planes inspira, Detalle decide.</text>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <g font-family="Manrope, Arial, sans-serif" filter="url(#shadow)">
+    <rect x="60" y="145" width="240" height="540" rx="34" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.10" stroke-width="2"/>
+    <text x="90" y="190" font-size="14" font-weight="800" fill="#FFA69E">INICIO</text>
+    <text x="90" y="230" font-family="Fraunces, Georgia, serif" font-size="28" font-weight="800" fill="#171923">Hola, Alex</text>
+    <rect x="90" y="265" width="180" height="150" rx="26" fill="#171923"/>
+    <text x="112" y="307" font-size="12" font-weight="800" fill="#B8F2E6">PROXIMO</text>
+    <text x="112" y="340" font-size="20" font-weight="800" fill="#FFFDf7">Picnic bajo</text>
+    <text x="112" y="365" font-size="20" font-weight="800" fill="#FFFDf7">las estrellas</text>
+    <rect x="112" y="382" width="94" height="28" rx="14" fill="#FFA69E"/>
+    <text x="130" y="401" font-size="11" font-weight="800" fill="#FFFDf7">18 junio</text>
+    <rect x="90" y="440" width="180" height="70" rx="22" fill="#FAF3DD"/>
+    <text x="112" y="470" font-size="13" font-weight="800" fill="#171923">2 planes cerrados</text>
+    <text x="112" y="493" font-size="12" font-weight="600" fill="#718096">Siguiente: cocina</text>
+    <rect x="90" y="535" width="180" height="62" rx="22" fill="#B8F2E6" opacity="0.55"/>
+    <text x="112" y="570" font-size="13" font-weight="800" fill="#171923">Reto 3 / 30</text>
+    <rect x="90" y="630" width="180" height="36" rx="18" fill="#FFA69E"/>
+    <text x="128" y="653" font-size="12" font-weight="800" fill="#FFFDf7">Ver agenda</text>
+
+    <rect x="340" y="145" width="240" height="540" rx="34" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.10" stroke-width="2"/>
+    <text x="370" y="190" font-size="14" font-weight="800" fill="#FFA69E">AGENDA</text>
+    <text x="370" y="230" font-family="Fraunces, Georgia, serif" font-size="28" font-weight="800" fill="#171923">Planes cerrados</text>
+    <rect x="370" y="265" width="180" height="88" rx="24" fill="#B8F2E6" opacity="0.75"/>
+    <text x="392" y="300" font-size="13" font-weight="800" fill="#171923">18 junio</text>
+    <text x="392" y="326" font-size="16" font-weight="800" fill="#171923">Picnic bajo...</text>
+    <rect x="370" y="372" width="180" height="88" rx="24" fill="#FAF3DD"/>
+    <text x="392" y="407" font-size="13" font-weight="800" fill="#171923">25 junio</text>
+    <text x="392" y="433" font-size="16" font-weight="800" fill="#171923">Clase de cocina</text>
+    <rect x="370" y="485" width="180" height="80" rx="24" fill="#FFE5E1"/>
+    <text x="392" y="518" font-size="13" font-weight="800" fill="#171923">Pendiente</text>
+    <text x="392" y="542" font-size="13" font-weight="600" fill="#718096">Maria propuso sabado</text>
+    <rect x="370" y="610" width="180" height="42" rx="21" fill="#FFA69E"/>
+    <text x="402" y="637" font-size="12" font-weight="800" fill="#FFFDf7">Planificar otro</text>
+
+    <rect x="620" y="145" width="240" height="540" rx="34" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.10" stroke-width="2"/>
+    <text x="650" y="190" font-size="14" font-weight="800" fill="#FFA69E">PLANES</text>
+    <text x="650" y="230" font-family="Fraunces, Georgia, serif" font-size="28" font-weight="800" fill="#171923">Explorar</text>
+    <rect x="650" y="260" width="180" height="44" rx="22" fill="#FAF3DD"/>
+    <text x="675" y="288" font-size="12" font-weight="600" fill="#718096">Buscar plan</text>
+    <rect x="650" y="325" width="180" height="112" rx="26" fill="#171923"/>
+    <text x="672" y="372" font-size="18" font-weight="800" fill="#FFFDf7">Brunch sin</text>
+    <text x="672" y="397" font-size="18" font-weight="800" fill="#FFFDf7">pantallas</text>
+    <rect x="650" y="460" width="180" height="112" rx="26" fill="#AED9E0"/>
+    <text x="672" y="508" font-size="18" font-weight="800" fill="#171923">Ruta de</text>
+    <text x="672" y="533" font-size="18" font-weight="800" fill="#171923">miradores</text>
+    <rect x="650" y="610" width="180" height="42" rx="21" fill="#FFFDf7" stroke="#FFA69E" stroke-width="2"/>
+    <text x="686" y="637" font-size="12" font-weight="800" fill="#DD7068">Crear idea</text>
+
+    <rect x="900" y="145" width="240" height="540" rx="34" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.10" stroke-width="2"/>
+    <text x="930" y="190" font-size="14" font-weight="800" fill="#FFA69E">DETALLE</text>
+    <text x="930" y="230" font-family="Fraunces, Georgia, serif" font-size="26" font-weight="800" fill="#171923">Brunch sin</text>
+    <text x="930" y="258" font-family="Fraunces, Georgia, serif" font-size="26" font-weight="800" fill="#171923">pantallas</text>
+    <rect x="930" y="292" width="180" height="120" rx="26" fill="#171923"/>
+    <text x="952" y="350" font-size="13" font-weight="800" fill="#FFFDf7">Imagen plan</text>
+    <rect x="930" y="438" width="180" height="58" rx="22" fill="#FAF3DD"/>
+    <text x="952" y="472" font-size="13" font-weight="800" fill="#171923">Proponer plan</text>
+    <rect x="930" y="515" width="180" height="58" rx="22" fill="#FAF3DD"/>
+    <text x="952" y="549" font-size="13" font-weight="800" fill="#171923">Proponer fecha</text>
+    <rect x="930" y="610" width="180" height="42" rx="21" fill="#FFA69E"/>
+    <text x="958" y="637" font-size="12" font-weight="800" fill="#FFFDf7">Guardar en agenda</text>
+  </g>
+</svg>

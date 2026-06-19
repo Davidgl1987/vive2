@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,650;0,9..144,800;1,9..144,650&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --powder-blush: #ffa69eff;
+  --eggshell: #faf3ddff;
+  --icy-aqua: #b8f2e6ff;
+  --light-blue: #aed9e0ff;
+
+  --partner-one-primary: 255 166 158;
+  --partner-one-primary-dark: 221 112 104;
+  --partner-one-primary-soft: 255 229 225;
+  --partner-two-primary: 174 217 224;
+  --partner-two-primary-dark: 69 125 136;
+  --partner-two-primary-soft: 230 247 250;
+
+  --color-primary: 255 166 158;
+  --color-primary-dark: 221 112 104;
+  --color-primary-soft: 255 229 225;
+  --color-secondary: 184 242 230;
+  --color-secondary-dark: 68 139 132;
+  --color-secondary-soft: 226 252 247;
+  --color-accent: 174 217 224;
+  --color-accent-dark: 69 125 136;
+  --color-accent-soft: 230 247 250;
+  --color-background: 250 243 221;
+  --color-card: 255 251 239;
+  --color-surface: 255 253 247;
+  --color-surface-soft: 247 237 207;
+  --color-neutral-soft: 238 230 204;
+  --color-text: 23 25 35;
+  --color-muted: 113 128 150;
+  --color-overlay: 0 0 0;
+  --color-border: 237 242 247;
+  --color-success: 72 187 120;
+  --color-warning: 217 158 71;
+  --shadow-card: 0 12px 0 rgb(var(--color-overlay) / 0.05), 0 18px 36px rgb(var(--color-overlay) / 0.08);
+  --shadow-soft: 0 18px 0 rgb(var(--color-overlay) / 0.05), 0 24px 52px rgb(var(--color-primary-dark) / 0.16);
+  --background-pattern:
+    linear-gradient(135deg, rgb(var(--color-primary) / 0.08) 0 1px, transparent 1px 20px),
+    linear-gradient(45deg, rgb(var(--color-accent-dark) / 0.08) 0 1px, transparent 1px 26px);
+
+  color-scheme: light;
+  font-family: 'Manrope', sans-serif;
+  background:
+    linear-gradient(135deg, rgb(var(--color-background)) 0 68%, rgb(var(--color-secondary)) 68% 82%, rgb(var(--color-accent)) 82% 100%);
+  color: rgb(var(--color-text));
+}
+
+.theme-partner-one {
+  --color-primary: var(--partner-one-primary);
+  --color-primary-dark: var(--partner-one-primary-dark);
+  --color-primary-soft: var(--partner-one-primary-soft);
+  --color-secondary: var(--partner-two-primary);
+  --color-secondary-dark: var(--partner-two-primary-dark);
+  --color-secondary-soft: var(--partner-two-primary-soft);
+  --color-accent: var(--partner-two-primary);
+  --color-accent-dark: var(--partner-two-primary-dark);
+  --color-accent-soft: var(--partner-two-primary-soft);
+}
+
+.theme-partner-two {
+  --color-primary: var(--partner-two-primary);
+  --color-primary-dark: var(--partner-two-primary-dark);
+  --color-primary-soft: var(--partner-two-primary-soft);
+  --color-secondary: var(--partner-one-primary);
+  --color-secondary-dark: var(--partner-one-primary-dark);
+  --color-secondary-soft: var(--partner-one-primary-soft);
+  --color-accent: var(--partner-one-primary);
+  --color-accent-dark: var(--partner-one-primary-dark);
+  --color-accent-soft: var(--partner-one-primary-soft);
+}
+
+.partner-avatar {
+  color: rgb(var(--color-muted));
+  background: rgb(var(--color-neutral-soft));
+  box-shadow: inset 0 0 0 1px rgb(var(--color-text) / 0.06);
+}
+
+.partner-avatar-one {
+  color: rgb(var(--color-surface));
+  background: rgb(var(--partner-one-primary));
+  box-shadow: 0 6px 12px rgb(var(--partner-one-primary-dark) / 0.22);
+}
+
+.partner-avatar-two {
+  color: rgb(var(--color-surface));
+  background: rgb(var(--partner-two-primary));
+  box-shadow: 0 6px 12px rgb(var(--partner-two-primary-dark) / 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgb(var(--color-background)) 0 64%, rgb(var(--color-secondary)) 64% 80%, rgb(var(--color-accent)) 80% 100%);
+  color: rgb(var(--color-text));
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--background-pattern);
+  mask-image: linear-gradient(180deg, rgb(var(--color-overlay)) 0%, transparent 82%);
+  opacity: 0.55;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.field {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgb(var(--color-border));
+  background: rgb(var(--color-surface));
+  padding: 0.95rem 1rem;
+  color: rgb(var(--color-text));
+  outline: none;
+  box-shadow: inset 0 1px 0 rgb(var(--color-surface) / 0.8);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.field-with-icon {
+  padding-left: 4rem;
+}
+
+.field:focus {
+  border-color: rgb(var(--color-primary));
+  box-shadow: 0 0 0 4px rgb(var(--color-primary) / 0.24), inset 0 1px 0 rgb(var(--color-surface));
+  transform: translateY(-1px);
+}
+
+.control-checkbox {
+  position: relative;
+  display: inline-flex;
+  width: 2.75rem;
+  height: 1.55rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 999px;
+  border: 1px solid rgb(var(--color-neutral-soft));
+  background: rgb(var(--color-neutral-soft));
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.control-checkbox::after {
+  content: '';
+  position: absolute;
+  left: 0.16rem;
+  top: 0.16rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: rgb(var(--color-surface));
+  box-shadow: 0 4px 10px rgb(var(--color-text) / 0.16);
+  transition: transform 0.2s ease;
+}
+
+.control-checkbox:checked {
+  border-color: rgb(var(--color-primary));
+  background: rgb(var(--color-primary));
+}
+
+.control-checkbox:checked::after {
+  transform: translateX(1.2rem);
+}
+
+.control-checkbox:focus-visible {
+  outline: 3px solid rgb(var(--color-primary) / 0.24);
+  outline-offset: 2px;
+}
+
+.choice-checkbox {
+  display: inline-grid;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  place-content: center;
+  appearance: none;
+  border-radius: 0.45rem;
+  border: 1px solid rgb(var(--color-primary-soft));
+  background: rgb(var(--color-surface));
+}
+
+.choice-checkbox::before {
+  content: '';
+  width: 0.62rem;
+  height: 0.62rem;
+  transform: scale(0);
+  border-radius: 0.25rem;
+  background: rgb(var(--color-primary));
+  transition: transform 0.14s ease;
+}
+
+.choice-checkbox:checked::before {
+  transform: scale(1);
+}
+
+.page-title {
+  font-family: 'Fraunces', serif;
+  font-size: 2.1rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.page-subtitle {
+  color: rgb(var(--color-muted));
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.mobile-frame {
+  position: relative;
+  overflow: visible;
+  background:
+    linear-gradient(160deg, rgb(var(--color-background)) 0 56%, rgb(var(--color-secondary-soft)) 56% 78%, rgb(var(--color-accent-soft)) 78% 100%);
+}
+
+.mobile-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgb(var(--color-primary) / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-accent-dark) / 0.07) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(180deg, rgb(var(--color-overlay)) 0%, transparent 52%);
+  opacity: 0.65;
+}
+
+.mobile-frame>* {
+  position: relative;
+  z-index: 1;
+}
+
+.motion-card {
+  animation: card-enter 0.42s both;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.solid-card {
+  position: relative;
+  overflow: hidden;
+  background: rgb(var(--color-surface));
+  border: 2px solid rgb(var(--color-text) / 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.solid-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 2;
+  height: 7px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgb(var(--color-primary)), rgb(var(--color-secondary)), rgb(var(--color-accent)));
+}
+
+.memory-card::before {
+  display: none;
+}
+
+.motion-card:nth-child(2) {
+  animation-delay: 35ms;
+}
+
+.motion-card:nth-child(3) {
+  animation-delay: 70ms;
+}
+
+.motion-card:nth-child(4) {
+  animation-delay: 105ms;
+}
+
+.motion-card:nth-child(5) {
+  animation-delay: 140ms;
+}
+
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

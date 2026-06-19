@@ -1,0 +1,64 @@
+<svg width="1120" height="620" viewBox="0 0 1120 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1120" height="620" rx="36" fill="#FAF3DD"/>
+  <path d="M0 392C154 330 294 398 446 348C626 289 719 214 886 273C1005 315 1060 290 1120 250V620H0V392Z" fill="#B8F2E6" opacity="0.75"/>
+  <path d="M708 0H1120V620H943C892 493 930 367 865 273C813 197 714 168 708 0Z" fill="#AED9E0" opacity="0.45"/>
+  <text x="56" y="72" font-family="Fraunces, Georgia, serif" font-size="34" font-weight="800" fill="#171923">Vive2: flujo principal propuesto</text>
+  <text x="56" y="106" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="600" fill="#718096">La app gira alrededor de preparar una cola de planes con fecha, vivirlos y convertirlos en recuerdos.</text>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10V0Z" fill="#DD7068"/>
+    </marker>
+  </defs>
+
+  <g font-family="Manrope, Arial, sans-serif" filter="url(#shadow)">
+    <rect x="60" y="180" width="150" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="88" y="218" font-size="15" font-weight="800" fill="#171923">Explorar</text>
+    <text x="88" y="244" font-size="13" font-weight="600" fill="#718096">Ideas + planes</text>
+
+    <rect x="260" y="180" width="150" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="288" y="218" font-size="15" font-weight="800" fill="#171923">Proponer</text>
+    <text x="288" y="244" font-size="13" font-weight="600" fill="#718096">Plan o fecha</text>
+
+    <rect x="460" y="180" width="174" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="488" y="218" font-size="15" font-weight="800" fill="#171923">Acordar</text>
+    <text x="488" y="244" font-size="13" font-weight="600" fill="#718096">Plan + dia</text>
+
+    <rect x="690" y="180" width="170" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="718" y="218" font-size="15" font-weight="800" fill="#171923">Agenda</text>
+    <text x="718" y="244" font-size="13" font-weight="600" fill="#718096">Cola cerrada</text>
+
+    <rect x="910" y="180" width="150" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="938" y="218" font-size="15" font-weight="800" fill="#171923">Hacer</text>
+    <text x="938" y="244" font-size="13" font-weight="600" fill="#718096">Completar</text>
+
+    <rect x="690" y="380" width="170" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="718" y="418" font-size="15" font-weight="800" fill="#171923">Recuerdo</text>
+    <text x="718" y="444" font-size="13" font-weight="600" fill="#718096">Foto + nota</text>
+
+    <rect x="460" y="380" width="174" height="96" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="488" y="418" font-size="15" font-weight="800" fill="#171923">Album</text>
+    <text x="488" y="444" font-size="13" font-weight="600" fill="#718096">Libro final</text>
+  </g>
+
+  <g stroke="#DD7068" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M218 228H250"/>
+    <path d="M418 228H450"/>
+    <path d="M642 228H680"/>
+    <path d="M868 228H900"/>
+    <path d="M985 286C982 340 935 417 870 428"/>
+    <path d="M682 428H644"/>
+  </g>
+
+  <g font-family="Manrope, Arial, sans-serif">
+    <rect x="258" y="315" width="374" height="44" rx="22" fill="#FFA69E" fill-opacity="0.28"/>
+    <text x="286" y="342" font-size="13" font-weight="800" fill="#171923">Si no hay acuerdo: seguir proponiendo sin bloquear la app</text>
+    <path d="M335 284C335 318 423 318 504 284" stroke="#DD7068" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <rect x="688" y="500" width="292" height="48" rx="24" fill="#FFFDf7" stroke="#171923" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="718" y="530" font-size="13" font-weight="800" fill="#171923">Reto: cuantos mas planes con fecha, mejor</text>
+  </g>
+</svg>

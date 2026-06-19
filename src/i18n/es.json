@@ -1,0 +1,441 @@
+{
+  "common": {
+    "appName": "Vive2",
+    "brandAlt": "Vive2",
+    "actions": {
+      "cancel": "Cancelar",
+      "continue": "Continuar",
+      "save": "Guardar",
+      "share": "Compartir",
+      "copy": "Copiar",
+      "viewAll": "Ver todos"
+    },
+    "placeholders": {
+      "firstPerson": "Primera persona",
+      "secondPerson": "Segunda persona",
+      "alex": "Alex",
+      "maria": "Maria"
+    },
+    "emptyDate": "Sin fecha"
+  },
+  "preferences": {
+    "budget": {
+      "gratis": "Gratis",
+      "bajo": "Bajo",
+      "medio": "Medio",
+      "alto": "Alto",
+      "variable": "Variable"
+    },
+    "customPlanLocation": {
+      "mixto": "Mixto",
+      "en casa": "En casa",
+      "exterior": "Exterior"
+    },
+    "interests": {
+      "gastronomia": "Gastronomía",
+      "musica": "Música",
+      "naturaleza": "Naturaleza",
+      "cultura": "Cultura",
+      "relax": "Relax",
+      "aventura": "Aventura",
+      "juegos": "Juegos",
+      "creatividad": "Creatividad"
+    }
+  },
+  "challenge": {
+    "title": "¿Cuántos planes queréis completar?",
+    "description": "Elegid el tamaño del reto. Podéis cambiarlo cuando queráis desde Perfil.",
+    "minimumGoalHint": "No podéis elegir un objetivo inferior a los planes ya completados en este reto.",
+    "celebration": {
+      "eyebrow": "Reto completado",
+      "title": "¡Lo habéis conseguido!",
+      "description": "Ya forman parte de vuestra historia los {count} planes de este reto. El siguiente acaba de empezar.",
+      "createBook": "Crear nuestro libro",
+      "continue": "Continuar con el nuevo reto"
+    },
+    "levels": {
+      "10": {
+        "label": "Fácil",
+        "description": "10 planes"
+      },
+      "20": {
+        "label": "Medio",
+        "description": "20 planes"
+      },
+      "30": {
+        "label": "Difícil",
+        "description": "30 planes"
+      }
+    }
+  },
+  "pages": {
+    "onboarding": {
+      "title": {
+        "first": "Planead,",
+        "second": "vivid y",
+        "third": "recordad"
+      },
+      "description": "Una app sencilla para convertir ideas en planes con fecha y recuerdos bonitos.",
+      "steps": {
+        "choose": {
+          "title": "Elegid un plan",
+          "description": "Podéis explorar ideas o añadir una vuestra."
+        },
+        "schedule": {
+          "title": "Cerrad fecha",
+          "description": "Agenda ayuda a acordar día sin perder la propuesta."
+        },
+        "remember": {
+          "title": "Guardadlo",
+          "description": "Cuando lo viváis, queda como recuerdo de los dos."
+        }
+      },
+      "start": "Descubrir Vive2",
+      "signIn": "Ya tengo cuenta",
+      "hint": "Un recorrido rápido y después dejamos vuestra cuenta preparada."
+    },
+    "onboardingTour": {
+      "back": "Volver",
+      "finish": "Preparar mi cuenta",
+      "slides": {
+        "home": {
+          "eyebrow": "Inicio",
+          "title": "Todo lo vuestro, de un vistazo",
+          "description": "Ved el reto, el próximo plan y la agenda sin tener que buscar por toda la app."
+        },
+        "plans": {
+          "eyebrow": "Planes",
+          "title": "Una idea para cada momento",
+          "description": "Explorad propuestas y filtrad por presupuesto, lugar o por lo que os apetezca hoy."
+        },
+        "agenda": {
+          "eyebrow": "Agenda",
+          "title": "Ponedle fecha entre los dos",
+          "description": "Proponed un día, poneos de acuerdo y tened siempre claro cuál es el siguiente plan."
+        },
+        "memories": {
+          "eyebrow": "Momentos",
+          "title": "Convertid planes en historia",
+          "description": "Guardad las fotos de cada uno, completad retos y cread el libro de cada etapa."
+        },
+        "profile": {
+          "eyebrow": "Perfil",
+          "title": "Vuestra pareja, a vuestra manera",
+          "description": "Vinculad la otra cuenta, elegid la dificultad del reto y configurad vuestros avisos."
+        }
+      }
+    },
+    "auth": {
+      "title": "Tu cuenta, antes de empezar",
+      "subtitle": "Así podremos guardar vuestra historia y vincular las dos cuentas de forma segura.",
+      "google": "Continuar con Google",
+      "or": "o con email",
+      "email": "Email",
+      "password": "Contraseña",
+      "emailAction": "Entrar o crear cuenta",
+      "legal": "La conexión real de acceso se activará cuando conectemos el backend.",
+      "next": {
+        "title": "¿Cómo quieres empezar?",
+        "subtitle": "La cuenta ya está preparada para continuar.",
+        "description": "Una persona crea el espacio de la pareja y la otra entra después con su código de invitación.",
+        "create": "Crear nuestro espacio",
+        "join": "Tengo un código"
+      }
+    },
+    "preferences": {
+      "title": "Preparad vuestra experiencia",
+      "subtitle": "Solo necesitamos lo justo para que los planes tengan sentido desde el primer día.",
+      "intro": "Vive2 gira alrededor de una cola sencilla: elegís una idea, la cerráis en Agenda y después la guardáis como recuerdo.",
+      "flowSteps": {
+        "ideas": "Ideas",
+        "agenda": "Agenda",
+        "memories": "Recuerdos"
+      },
+      "whoAreYou": "¿Quiénes sois?",
+      "submit": "Entrar en Inicio",
+      "errors": {
+        "partnerOneName": "Añadid el primer nombre.",
+        "partnerTwoName": "Añadid el segundo nombre."
+      }
+    },
+    "profile": {
+      "title": "Vuestro rincón",
+      "subtitle": "Vuestra identidad, el reto y los avisos en un solo lugar.",
+      "mode": {
+        "title": "Modo de uso",
+        "linkedDescription": "Ya estáis usando Vive2 como pareja.",
+        "pairDescription": "En pareja podéis ver la opinión del otro, poneros de acuerdo con las fechas y cerrar planes juntos.",
+        "singleDescription": "Modo individual activo. La app se centra en ti y podéis activar el modo pareja cuando queráis.",
+        "pair": "En pareja",
+        "single": "Individual",
+        "ariaLabel": "Usar modo en pareja",
+        "linkedCardTitle": "¡Ya estáis los dos en Vive2!",
+        "linkedCardDescription": "Agenda compartida activada.",
+        "inviteCodeLabel": "Código de pareja",
+        "shareLink": "Compartir enlace",
+        "haveCode": "Tengo un código"
+      },
+      "notifications": {
+        "title": "Notificaciones",
+        "sameDay": "Aviso el mismo día",
+        "daysBefore": "Aviso {count} día{suffix} antes",
+        "description": "{label} de cada plan acordado.",
+        "disabled": "Sin avisos por ahora.",
+        "configure": "Configurar avisos",
+        "enableHint": "Activa las notificaciones para configurar avisos",
+        "ariaLabel": "Activar notificaciones"
+      },
+      "preferences": {
+        "title": "Vosotros y vuestro reto",
+        "sectionChallenge": "Objetivo del reto",
+        "swapAria": "Intercambiar nombres",
+        "nameError": "Añade nombres de al menos dos letras."
+      },
+      "signOut": "Salir de la app",
+      "joinModal": {
+        "eyebrow": "Tengo un código",
+        "title": "Pega el código",
+        "placeholder": "VIVE2-ABC123",
+        "description": "Como la otra persona ya dejó la base preparada, aquí solo necesitamos saber quién eres de los dos."
+      },
+      "unlinkModal": {
+        "eyebrow": "Pasar a modo individual",
+        "title": "¿Queréis desvincular los dispositivos?",
+        "description": "Cambiaremos al modo individual, mantendremos tus recuerdos y planes en cada cuenta, pero ya no podréis planificar juntos los planes y fechas.",
+        "confirm": "Desvincular"
+      },
+      "feedback": {
+        "inviteReadyTitle": "Invitación lista",
+        "inviteReadyMessage": "Hemos preparado un enlace para abrir la invitación con la configuración ya cargada.",
+        "inviteCopiedTitle": "Enlace copiado",
+        "inviteCopiedMessage": "No se pudo abrir compartir, pero dejamos el enlace de invitación copiado.",
+        "codeCopiedTitle": "Código copiado",
+        "codeCopiedMessage": "Hemos copiado solo el código para pegarlo donde quieras.",
+        "singleModeTitle": "Modo individual activado",
+        "singleModeMessage": "Cambiaremos al modo individual, mantendremos tus recuerdos y planes en cada cuenta, pero ya no podréis planificar juntos los planes y fechas.",
+        "invalidCodeTitle": "Código no válido",
+        "invalidCodeMessage": "No hemos podido aceptar ese código.",
+        "pairEnabledTitle": "Pareja activada",
+        "pairEnabledMessage": "Ya estáis los dos en Vive2 en este dispositivo."
+      }
+    },
+    "agenda": {
+      "title": "Vuestros próximos planes",
+      "subtitle": "Cerrad varios planes con fecha y convertidlos en vuestro reto.",
+      "pairPromoEyebrow": "Vive2 también puede ir a dos",
+      "pairPromoTitle": "Si queréis, podéis vincular a tu pareja desde Perfil",
+      "pairPromoDescription": "Mientras tanto, la agenda sigue funcionando igual en modo individual.",
+      "confirmed": "Confirmados",
+      "calendar": "Calendario",
+      "calendarHint": "Toca un día libre para elegir un plan y proponerlo en esa fecha.",
+      "allConfirmed": "Todos los planes confirmados",
+      "plansOnDate": "Planes del {date}",
+      "readyToLive": "Listo para vivirlo.",
+      "liveIt": "Vivirlo",
+      "cancelPlan": "Cancelar",
+      "pending": "Pendientes de acordar",
+      "emptyTitle": "Nada pendiente",
+      "emptyDescription": "Cuando propongáis planes o fechas, aparecerán aquí para cerrarlos juntos.",
+      "explorePlans": "Explorar planes",
+      "planAnother": "Planificar otro",
+      "pendingPlanFallback": "Plan pendiente",
+      "viewPlanAria": "Ver {title}",
+      "countLabel": "{count} plan{suffix}"
+    },
+    "plans": {
+      "title": "Todos los planes",
+      "subtitle": "Ideas para romper la rutina y guardar recuerdos.",
+      "searchPlaceholder": "Buscar un plan",
+      "proposedDate": {
+        "title": "Elegid un plan para este día",
+        "description": "Lo propondremos para el {date}."
+      },
+      "filters": {
+        "open": "Filtrar planes",
+        "title": "Filtra para hoy",
+        "description": "Estas elecciones solo afectan a esta búsqueda.",
+        "clear": "Limpiar",
+        "all": "Todos",
+        "budget": "Presupuesto",
+        "location": "Lugar",
+        "type": "Tipo de plan"
+      },
+      "empty": {
+        "title": "No hay planes con esta combinación",
+        "description": "Prueba a quitar algún filtro o cambia la búsqueda.",
+        "clear": "Ver todos los planes"
+      }
+    },
+    "planDetail": {
+      "notFound": "Plan no encontrado.",
+      "agenda": {
+        "eyebrow": "Agenda",
+        "confirmed": "En agenda",
+        "pending": "Pendiente de acordar",
+        "idle": "Planificar",
+        "confirmedDescription": "Ya tenéis este plan cerrado con fecha. Puedes verlo en Agenda o vivirlo cuando llegue el momento.",
+        "pendingDescription": "Este plan está esperando el siguiente paso en Agenda.",
+        "idleDescription": "Añade este plan a vuestra Agenda para decidirlo sin convertir esta pantalla en una tarea.",
+        "idleDateDescription": "Añade este plan a vuestra Agenda con el {date} como fecha propuesta.",
+        "resolve": "Resolver en Agenda",
+        "planThis": "Planificar este plan",
+        "planThisDate": "Proponer para este día"
+      },
+      "custom": {
+        "eyebrow": "Editar idea propia",
+        "title": "Completad los detalles",
+        "titleLabel": "Título",
+        "descriptionLabel": "Descripción",
+        "locationLabel": "Ubicación",
+        "budgetLabel": "Presupuesto",
+        "durationLabel": "Duración",
+        "categoriesLabel": "Categorías",
+        "save": "Guardar detalles"
+      },
+      "originalPart": "Parte original",
+      "duration": "Duración",
+      "budget": "Presupuesto",
+      "materials": "Materiales",
+      "noMaterials": "Solo ganas de pasarlo bien.",
+      "whereToDoIt": {
+        "title": "¿Dónde hacerlo?",
+        "description": "Sugerencias de lugares para este plan. Cada chip abre una búsqueda directa en Google Maps.",
+        "locationHint": "Ahora buscaremos cerca de ti."
+      },
+      "customChip": "Creado por vosotros"
+    },
+    "home": {
+      "greeting": "Hola, {name}",
+      "subtitle": "¿Qué te apetece hacer hoy con {name}?",
+      "pendingEyebrow": "Agenda en marcha",
+      "hasPlan": "Ya tenéis plan",
+      "agreedDate": "Fecha acordada",
+      "nextPlanDescription": "Plan y fecha cerrados. Ahora solo queda disfrutarlo y guardarlo como recuerdo.",
+      "recommendedForToday": "Plan recomendado para hoy",
+      "agendaSection": "En agenda",
+      "progress": "Progreso",
+      "agendaSummary": "Resumen de Agenda",
+      "completedPlans": "planes completados",
+      "agreedPlans": "planes acordados",
+      "toAgree": "por acordar",
+      "pendingProposals": "{count} propuesta{suffix} esperando un sí.",
+      "pairPromoTitle": "En pareja es mejor.",
+      "pairPromoDescription": "Podéis ver la opinión del otro, poneros de acuerdo y cerrar planes juntos desde la app."
+    },
+    "memories": {
+      "title": "Vuestros recuerdos",
+      "subtitle": "Todo lo bonito que ya habéis vivido juntos en un mismo lugar.",
+      "album": "Ver álbum / libro",
+      "current": {
+        "sectionTitle": "Reto actual",
+        "goal": "Reto de {count} planes",
+        "empty": "El próximo plan que completéis empezará a llenar este reto."
+      },
+      "completed": {
+        "sectionTitle": "Retos completados",
+        "goal": "Reto de {count} planes",
+        "dateRange": "{start} - {end}",
+        "noPhotos": "Este reto no tiene fotos todavía.",
+        "empty": "Aquí aparecerán los retos que vayáis completando."
+      }
+    },
+    "memoryDetail": {
+      "photos": {
+        "title": "Vuestras fotos",
+        "description": "Añadid una foto de cada persona para sustituir la imagen genérica del plan.",
+        "updatedTitle": "Foto actualizada",
+        "updatedMessage": "La foto de {name} ya forma parte de este recuerdo."
+      }
+    },
+    "joinByCode": {
+      "whoAreYou": "¿Quién eres?",
+      "deviceUser": "Elige quién va a usar este dispositivo",
+      "changeCode": "Cambiar código"
+    }
+  },
+  "components": {
+    "planIdeaCard": {
+      "title": "¿Se te ha ocurrido un plan?",
+      "description": "Añadid una idea rápida y completad los detalles cuando queráis.",
+      "placeholder": "Ej. Ir a ver el amanecer con café",
+      "add": "Añadir",
+      "next": "Próximo"
+    },
+    "ownPlanPhotoButton": {
+      "add": "Subir mi foto del plan",
+      "change": "Cambiar mi foto del plan"
+    },
+    "agendaAgreementCard": {
+      "proposedBy": "Propuesto por {name}",
+      "nextStep": "Siguiente paso",
+      "acceptPlanTitle": "Acepta el plan",
+      "acceptPlanDescription": "{name} ha propuesto esta idea. Si te apetece, el siguiente paso será elegir día.",
+      "chooseDateTitle": "Elegid un día",
+      "chooseDateDescriptionWithProposals": "Podéis quedaros con una fecha propuesta o añadir otra alternativa.",
+      "chooseDateDescriptionWithoutProposals": "El plan ya está sobre la mesa. Ahora solo falta ponerle fecha.",
+      "confirmDateTitle": "Elegid fecha",
+      "confirmDateDescription": "Selecciona una de las propuestas o plantea otra que te encaje mejor.",
+      "readyTitle": "Listo",
+      "readyDescription": "Plan y fecha están acordados.",
+      "acceptPlan": "Aceptar plan",
+      "chooseDate": "Elegid una fecha",
+      "dateConflict": "El {date} coincide con {planTitle}, pero podéis hacerlo igual.",
+      "partnerProposes": "{name} propone",
+      "yourProposal": "Tu propuesta",
+      "accepted": "Aceptada",
+      "accept": "Aceptar",
+      "proposeAnotherDate": "Proponer otra fecha",
+      "pickDate": "Elegir fecha",
+      "viewPlan": "Ver plan",
+      "sameDateEyebrow": "Misma fecha",
+      "sameDateTitle": "Esa es la fecha que propone {name}",
+      "sameDateDescription": "Si la aceptas, dejaremos ya el día acordado para este plan.",
+      "sameDateConfirm": "Aceptar esa fecha"
+    },
+    "confirmedPlansCalendar": {
+      "previousDates": "Fechas anteriores",
+      "nextDates": "Fechas siguientes"
+    },
+    "planCard": {
+      "customBadge": "Idea",
+      "customChip": "Creado por vosotros",
+      "premiumChip": "Premium",
+      "done": "Hecho"
+    },
+    "bottomNav": {
+      "home": "Inicio",
+      "plans": "Planes",
+      "agenda": "Agenda",
+      "memories": "Momentos",
+      "profile": "Perfil"
+    }
+  },
+  "store": {
+    "defaults": {
+      "coupleName": "Cris y David",
+      "partnerOneName": "Cris",
+      "partnerTwoName": "David",
+      "seedLocationName": "Parque del Retiro",
+      "seedLocationAddress": "Madrid",
+      "seedNote": "Una noche tranquila, muchas risas y cero prisa. Justo lo que necesitábamos."
+    }
+  },
+  "invite": {
+    "errors": {
+      "emptyCode": "Escribe un código para continuar.",
+      "invalidFormat": "Ese código no tiene el formato esperado.",
+      "ownCode": "Ese código tienes que introducirlo en el dispositivo de tu pareja."
+    },
+    "choice": {
+      "first": "Soy la primera persona",
+      "second": "Soy la segunda persona",
+      "named": "Soy {name}"
+    }
+  },
+  "data": {
+    "plans": {
+      "shareTemplate": "Hoy hemos completado \"{plan}\" y nos lo queremos guardar para siempre.",
+      "albumPromptTemplate": "Foto de pareja que capture {plan} con un gesto natural y mucha calidez."
+    }
+  }
+}

@@ -1,0 +1,1522 @@
+[
+  {
+    "plan": "Picnic bajo las estrellas",
+    "descripcion": "Preparad una cena sencilla y buscad un rincón bonito para cenar con calma.",
+    "parteOriginal": "Cada uno lleva una pregunta escrita para hablar de un recuerdo favorito juntos.",
+    "presupuesto": "bajo",
+    "costeEstimado": "10-25 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "romantico",
+      "gastronomico",
+      "noche"
+    ],
+    "duracion": "2-3 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "reconectar",
+      "celebrar"
+    ],
+    "materiales": [
+      "manta",
+      "cena ligera",
+      "bebida"
+    ],
+    "ayudaCercaDeTi": [
+      "miradores",
+      "parques",
+      "zonas de picnic"
+    ],
+    "afiliadosSugeridos": [
+      "cesta picnic",
+      "manta impermeable"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que instante de esta noche te gustaria repetir dentro de diez anos?"
+  },
+  {
+    "plan": "Brunch sin pantallas",
+    "descripcion": "Reservad una manana para desayunar fuera sin moviles ni interrupciones.",
+    "parteOriginal": "Llevad una mini tarjeta con tres cosas que os gustaria probar este ano.",
+    "presupuesto": "medio",
+    "costeEstimado": "20-35 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "romantico",
+      "gastronomico",
+      "manana"
+    ],
+    "duracion": "90 min",
+    "energia": "tranquilo",
+    "necesitaReserva": "opcional",
+    "idealPara": [
+      "bajar ritmo",
+      "charlar"
+    ],
+    "materiales": [
+      "tarjeta",
+      "boli"
+    ],
+    "ayudaCercaDeTi": [
+      "cafeterias",
+      "brunch",
+      "terrazas"
+    ],
+    "afiliadosSugeridos": [
+      "camara instantanea"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que conversacion de hoy os ha acercado mas?"
+  },
+  {
+    "plan": "Clase de cocina juntos",
+    "descripcion": "Aprended una receta nueva en casa o en un taller cercano y cenadla luego.",
+    "parteOriginal": "Uno dirige la receta y el otro improvisa el emplatado final.",
+    "presupuesto": "medio",
+    "costeEstimado": "15-45 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "gastronomico",
+      "divertido",
+      "creatividad"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": "depende",
+    "idealPara": [
+      "reir",
+      "colaborar"
+    ],
+    "materiales": [
+      "ingredientes",
+      "delantal",
+      "playlist"
+    ],
+    "ayudaCercaDeTi": [
+      "talleres",
+      "mercados",
+      "escuelas de cocina"
+    ],
+    "afiliadosSugeridos": [
+      "kit de cocina",
+      "velas"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que parte del plan os hizo sentir mejor equipo?"
+  },
+  {
+    "plan": "Ruta de miradores al atardecer",
+    "descripcion": "Elegid dos o tres puntos altos de la ciudad y haced una mini ruta sin prisa.",
+    "parteOriginal": "En cada parada os haceis una foto y escribis una palabra para ese momento.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-8 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "aventura",
+      "romantico",
+      "fotografia"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "salir de rutina",
+      "ver la ciudad"
+    ],
+    "materiales": [
+      "agua",
+      "movil",
+      "notas"
+    ],
+    "ayudaCercaDeTi": [
+      "miradores",
+      "paseos",
+      "parques"
+    ],
+    "afiliadosSugeridos": [
+      "tripode movil"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "question": "Desde que lugar sentisteis que el dia se volvia especial?"
+  },
+  {
+    "plan": "Spa casero con ritual",
+    "descripcion": "Convertid vuestra casa en un refugio con musica, mascarillas y descanso.",
+    "parteOriginal": "Antes de empezar, cada uno pide un deseo de autocuidado para el otro.",
+    "presupuesto": "bajo",
+    "costeEstimado": "8-18 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "en casa",
+      "relax",
+      "romantico"
+    ],
+    "duracion": "90 min",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "descansar",
+      "mimaros"
+    ],
+    "materiales": [
+      "velas",
+      "toallas",
+      "infusion"
+    ],
+    "ayudaCercaDeTi": [
+      "cosmetica",
+      "tiendas relax"
+    ],
+    "afiliadosSugeridos": [
+      "sales de bano",
+      "mascarillas"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "lluvia",
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que gesto del otro te hizo sentir mas cuidado?"
+  },
+  {
+    "plan": "Carta al futuro y cafe",
+    "descripcion": "Buscad un cafe tranquilo y escribid una carta para abrir dentro de un ano.",
+    "parteOriginal": "Incluid una promesa pequena y una foto del dia doblada dentro.",
+    "presupuesto": "bajo",
+    "costeEstimado": "6-15 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "profundo",
+      "romantico",
+      "cultura"
+    ],
+    "duracion": "90 min",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "hablar de futuro",
+      "emocionaros"
+    ],
+    "materiales": [
+      "papel",
+      "sobre",
+      "boli"
+    ],
+    "ayudaCercaDeTi": [
+      "cafeterias",
+      "librerias"
+    ],
+    "afiliadosSugeridos": [
+      "papeleria bonita"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1517846693594-1567da72af75?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que frase os gustaria recordar cuando abrais la carta?"
+  },
+  {
+    "plan": "Sesion de fotos vintage",
+    "descripcion": "Vestiros con una estetica concreta y cread una mini historia por la ciudad.",
+    "parteOriginal": "Elegid tres poses que representen pasado, presente y futuro de la relacion.",
+    "presupuesto": "bajo",
+    "costeEstimado": "0-20 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "fotografia",
+      "creatividad",
+      "divertido"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "crear recuerdos",
+      "jugar"
+    ],
+    "materiales": [
+      "camara o movil",
+      "ropa especial"
+    ],
+    "ayudaCercaDeTi": [
+      "calles bonitas",
+      "parques",
+      "cafeterias"
+    ],
+    "afiliadosSugeridos": [
+      "camara instantanea"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "mañana",
+      "tarde"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": false,
+    "cover": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que foto resume mejor quienes sois ahora?"
+  },
+  {
+    "plan": "Tarde de juegos y retos",
+    "descripcion": "Montad una tarde en casa con juegos de mesa, snacks y mini castigos graciosos.",
+    "parteOriginal": "Cada victoria da derecho a elegir un deseo pequeno para la semana.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-12 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "en casa",
+      "divertido",
+      "juegos"
+    ],
+    "duracion": "2-3 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "reir",
+      "desconectar"
+    ],
+    "materiales": [
+      "juegos",
+      "snacks"
+    ],
+    "ayudaCercaDeTi": [
+      "tiendas de juegos"
+    ],
+    "afiliadosSugeridos": [
+      "juego de cartas"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que momento os hizo reir hasta olvidaros del reloj?"
+  },
+  {
+    "plan": "Mini escapada sorpresa",
+    "descripcion": "Organizad una manana o tarde fuera del barrio con un destino sorpresa.",
+    "parteOriginal": "La persona que organiza debe incluir una parada que represente un valor de la pareja.",
+    "presupuesto": "alto",
+    "costeEstimado": "35-80 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "aventura",
+      "sorpresa",
+      "viaje"
+    ],
+    "duracion": "medio dia",
+    "energia": "activo",
+    "necesitaReserva": "depende",
+    "idealPara": [
+      "celebrar",
+      "romper rutina"
+    ],
+    "materiales": [
+      "mochila ligera",
+      "agua"
+    ],
+    "ayudaCercaDeTi": [
+      "estaciones",
+      "pueblos",
+      "rutas"
+    ],
+    "afiliadosSugeridos": [
+      "guia de viaje",
+      "bolsa termica"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "mañana",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "soleado",
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que parte de la sorpresa supero lo que esperabais?"
+  },
+  {
+    "plan": "Desayuno en un sitio nuevo",
+    "descripcion": "Salid temprano y probad un lugar que no hayais visitado nunca.",
+    "parteOriginal": "Pedid algo fuera de vuestra eleccion habitual y comentad por que lo elegisteis.",
+    "presupuesto": "bajo",
+    "costeEstimado": "8-18 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "gastronomico",
+      "manana",
+      "descubrir"
+    ],
+    "duracion": "1 hora",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "empezar bien el dia"
+    ],
+    "materiales": [],
+    "ayudaCercaDeTi": [
+      "cafeterias",
+      "brunch"
+    ],
+    "afiliadosSugeridos": [
+      "taza termica"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que pequeno descubrimiento os encantaria repetir?"
+  },
+  {
+    "plan": "Museo y pregunta profunda",
+    "descripcion": "Visitad una exposicion y elegid una obra que os recuerde al otro.",
+    "parteOriginal": "Explicad por que esa obra se parece a vuestra historia o a vuestra energia.",
+    "presupuesto": "medio",
+    "costeEstimado": "12-28 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "cultura",
+      "profundo",
+      "romantico"
+    ],
+    "duracion": "2 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": "opcional",
+    "idealPara": [
+      "hablar diferente",
+      "inspiraros"
+    ],
+    "materiales": [],
+    "ayudaCercaDeTi": [
+      "museos",
+      "galerias",
+      "cultura"
+    ],
+    "afiliadosSugeridos": [
+      "cuaderno creativo"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana",
+      "tarde"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que obra os ayudo a hablar de algo importante?"
+  },
+  {
+    "plan": "Cena low-cost con dress code",
+    "descripcion": "Montad una cena sencilla con una tematica divertida y ropa especial.",
+    "parteOriginal": "Cada uno prepara una playlist de cinco canciones para el otro.",
+    "presupuesto": "bajo",
+    "costeEstimado": "10-22 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "romantico",
+      "en casa",
+      "low-cost"
+    ],
+    "duracion": "2 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "coquetear",
+      "celebrar"
+    ],
+    "materiales": [
+      "cena",
+      "velas",
+      "playlist"
+    ],
+    "ayudaCercaDeTi": [
+      "supermercados gourmet"
+    ],
+    "afiliadosSugeridos": [
+      "velas",
+      "mantel bonito"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que detalle hizo que la cena se sintiera especial?"
+  },
+  {
+    "plan": "Karaoke privado",
+    "descripcion": "Reservad una sala o montad un karaoke casero con canciones compartidas.",
+    "parteOriginal": "Cantad una cancion que describa una etapa concreta de la relacion.",
+    "presupuesto": "bajo",
+    "costeEstimado": "0-25 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "divertido",
+      "musica",
+      "noche"
+    ],
+    "duracion": "90 min",
+    "energia": "activo",
+    "necesitaReserva": "depende",
+    "idealPara": [
+      "soltaros",
+      "reir"
+    ],
+    "materiales": [
+      "micro o movil",
+      "playlist"
+    ],
+    "ayudaCercaDeTi": [
+      "karaoke",
+      "bares",
+      "salas privadas"
+    ],
+    "afiliadosSugeridos": [
+      "micro bluetooth"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que cancion fue vuestra favorita y por que?"
+  },
+  {
+    "plan": "Noche de velas y preguntas",
+    "descripcion": "Bajad las luces, preparad algo caliente y dedicaos una conversacion lenta.",
+    "parteOriginal": "Usad cinco preguntas que normalmente nunca os haceis.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-12 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "profundo",
+      "romantico",
+      "en casa"
+    ],
+    "duracion": "75 min",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "reconectar",
+      "escuchar"
+    ],
+    "materiales": [
+      "velas",
+      "te o vino"
+    ],
+    "ayudaCercaDeTi": [
+      "tiendas decoracion"
+    ],
+    "afiliadosSugeridos": [
+      "baraja de preguntas"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "lluvia",
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que respuesta del otro te sorprendio mas?"
+  },
+  {
+    "plan": "Mapa de suenos compartido",
+    "descripcion": "Recortad, dibujad o guardad imagenes para crear vuestro mapa de deseos.",
+    "parteOriginal": "Incluid un sueno muy pequeno y otro muy ambicioso con una fecha posible.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-10 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "creatividad",
+      "profundo",
+      "en casa"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "planear juntos",
+      "ilusionarse"
+    ],
+    "materiales": [
+      "revistas",
+      "tablet",
+      "cartulina"
+    ],
+    "ayudaCercaDeTi": [
+      "papelerias"
+    ],
+    "afiliadosSugeridos": [
+      "tablon corcho"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que deseo sentisteis mas vuestro como equipo?"
+  },
+  {
+    "plan": "Paseo en bici al sunset",
+    "descripcion": "Haced una ruta suave hasta un punto bonito y terminad con algo para tomar.",
+    "parteOriginal": "En mitad del camino cambiais el liderazgo de la ruta y cada uno elige una parada.",
+    "presupuesto": "bajo",
+    "costeEstimado": "5-15 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "aventura",
+      "deporte",
+      "romantico"
+    ],
+    "duracion": "2 horas",
+    "energia": "activo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "moveros",
+      "respirar aire libre"
+    ],
+    "materiales": [
+      "bicis",
+      "agua"
+    ],
+    "ayudaCercaDeTi": [
+      "paseos",
+      "rios",
+      "parques"
+    ],
+    "afiliadosSugeridos": [
+      "luces bici",
+      "soporte movil"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80",
+    "question": "En que punto sentisteis mas libertad juntos?"
+  },
+  {
+    "plan": "Cata casera de postres",
+    "descripcion": "Comprad o preparad varios dulces y puntuadlos como si fueseis jurado.",
+    "parteOriginal": "El ganador elige el proximo mini plan sorpresa de la semana.",
+    "presupuesto": "bajo",
+    "costeEstimado": "8-20 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "gastronomico",
+      "en casa",
+      "divertido"
+    ],
+    "duracion": "1 hora",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "jugar",
+      "daros un capricho"
+    ],
+    "materiales": [
+      "postres",
+      "tarjetas puntuacion"
+    ],
+    "ayudaCercaDeTi": [
+      "pastelerias",
+      "cafeterias"
+    ],
+    "afiliadosSugeridos": [
+      "vajilla bonita"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que detalle convirtio un postre simple en un recuerdo bonito?"
+  },
+  {
+    "plan": "Taller de ceramica o arte",
+    "descripcion": "Reservad un taller creativo y quedaos con una pieza hecha a cuatro manos.",
+    "parteOriginal": "Cada uno empieza la pieza del otro y luego la intercambiais para acabarla.",
+    "presupuesto": "alto",
+    "costeEstimado": "40-75 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "creatividad",
+      "cultura",
+      "romantico"
+    ],
+    "duracion": "2-3 horas",
+    "energia": "moderado",
+    "necesitaReserva": true,
+    "idealPara": [
+      "crear algo tangible",
+      "concentraros"
+    ],
+    "materiales": [],
+    "ayudaCercaDeTi": [
+      "talleres",
+      "arte"
+    ],
+    "afiliadosSugeridos": [
+      "marco de fotos"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que pieza os gustaria conservar durante anos?"
+  },
+  {
+    "plan": "Entrevista true or false",
+    "descripcion": "Uno pregunta y el otro responde solo con verdadero o falso antes de explicar.",
+    "parteOriginal": "Las preguntas deben mezclar humor, futuro y recuerdos.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "profundo",
+      "juegos",
+      "en casa"
+    ],
+    "duracion": "45 min",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "conoceros mejor"
+    ],
+    "materiales": [
+      "lista de preguntas"
+    ],
+    "ayudaCercaDeTi": [
+      "papelerias"
+    ],
+    "afiliadosSugeridos": [
+      "cuaderno"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que verdad os ayudo a entenderos mejor?"
+  },
+  {
+    "plan": "Libreria, cafe y recomendacion",
+    "descripcion": "Id a una libreria, elegid un libro para el otro y comentad el por que.",
+    "parteOriginal": "Dentro del libro dejad una nota de dos lineas dedicada.",
+    "presupuesto": "medio",
+    "costeEstimado": "12-30 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "cultura",
+      "profundo",
+      "manana"
+    ],
+    "duracion": "2 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "hablar con calma",
+      "regalar algo"
+    ],
+    "materiales": [
+      "nota pequena"
+    ],
+    "ayudaCercaDeTi": [
+      "librerias",
+      "cafeterias"
+    ],
+    "afiliadosSugeridos": [
+      "marcapaginas"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana",
+      "tarde"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que libro sentisteis que estaba hecho para el otro?"
+  },
+  {
+    "plan": "Baile en casa challenge",
+    "descripcion": "Aprended una coreografia simple y grabad un recuerdo torpe y bonito.",
+    "parteOriginal": "Al final improvisais treinta segundos sin reglas.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "musica",
+      "divertido",
+      "en casa"
+    ],
+    "duracion": "1 hora",
+    "energia": "activo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "reir",
+      "moveros"
+    ],
+    "materiales": [
+      "altavoz",
+      "agua"
+    ],
+    "ayudaCercaDeTi": [
+      "academias de baile"
+    ],
+    "afiliadosSugeridos": [
+      "altavoz bluetooth"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que segundo de la cancion os hizo olvidaros de todo?"
+  },
+  {
+    "plan": "Busqueda del tesoro sentimental",
+    "descripcion": "Preparad pistas por casa o por el barrio con referencias a vuestra historia.",
+    "parteOriginal": "La ultima pista debe terminar en un mini regalo o plan siguiente.",
+    "presupuesto": "bajo",
+    "costeEstimado": "5-18 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "sorpresa",
+      "juegos",
+      "romantico"
+    ],
+    "duracion": "90 min",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "sorprender",
+      "recordar momentos"
+    ],
+    "materiales": [
+      "notas",
+      "detalle final"
+    ],
+    "ayudaCercaDeTi": [
+      "papelerias",
+      "parques"
+    ],
+    "afiliadosSugeridos": [
+      "caja regalo"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que pista os emociono mas y por que?"
+  },
+  {
+    "plan": "Picnic indoor de lluvia",
+    "descripcion": "Cuando fuera no acompana, montad un picnic dentro con mantas y luces.",
+    "parteOriginal": "Cada uno trae un snack sorpresa y una historia de la infancia.",
+    "presupuesto": "bajo",
+    "costeEstimado": "8-16 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "romantico",
+      "en casa",
+      "low-cost"
+    ],
+    "duracion": "2 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "convertir un dia gris en especial"
+    ],
+    "materiales": [
+      "manta",
+      "luces",
+      "snacks"
+    ],
+    "ayudaCercaDeTi": [
+      "supermercados",
+      "decoracion"
+    ],
+    "afiliadosSugeridos": [
+      "guirnalda LED"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "lluvia"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que pequeno detalle transformo el ambiente?"
+  },
+  {
+    "plan": "Voluntariado en equipo",
+    "descripcion": "Buscad una accion pequena para ayudar juntos: alimentos, animales o barrio.",
+    "parteOriginal": "Despues hablad de que valor quereis cuidar mas como pareja.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-10 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "profundo",
+      "aventura",
+      "solidario"
+    ],
+    "duracion": "2-4 horas",
+    "energia": "moderado",
+    "necesitaReserva": "depende",
+    "idealPara": [
+      "compartir valores",
+      "salir de vosotros"
+    ],
+    "materiales": [
+      "ropa comoda"
+    ],
+    "ayudaCercaDeTi": [
+      "asociaciones",
+      "refugios",
+      "mercados solidarios"
+    ],
+    "afiliadosSugeridos": [
+      "bolsa reutilizable"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "mañana",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que os llevasteis de esta experiencia aparte del plan?"
+  },
+  {
+    "plan": "Domingo de mercado y aperitivo",
+    "descripcion": "Recorred un mercado local, elegid algo improvisado y haced un aperitivo juntos.",
+    "parteOriginal": "Cada uno debe elegir un ingrediente que represente al otro.",
+    "presupuesto": "medio",
+    "costeEstimado": "15-30 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "gastronomico",
+      "descubrir",
+      "fin de semana"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "pasear",
+      "probar cosas nuevas"
+    ],
+    "materiales": [
+      "bolsa tela"
+    ],
+    "ayudaCercaDeTi": [
+      "mercados",
+      "gourmet"
+    ],
+    "afiliadosSugeridos": [
+      "tabla de aperitivo"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que sabor se os quedo asociado a este plan?"
+  },
+  {
+    "plan": "Historias junto a una hoguera",
+    "descripcion": "Si teneis acceso a una chimenea o escapada rural, contad historias con bebida caliente.",
+    "parteOriginal": "Cada uno cuenta un momento del otro que le hizo sentirse en casa.",
+    "presupuesto": "medio",
+    "costeEstimado": "15-40 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "romantico",
+      "profundo",
+      "noche"
+    ],
+    "duracion": "2 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": "depende",
+    "idealPara": [
+      "intimidad",
+      "otono o invierno"
+    ],
+    "materiales": [
+      "bebida caliente",
+      "manta"
+    ],
+    "ayudaCercaDeTi": [
+      "casas rurales",
+      "chimeneas"
+    ],
+    "afiliadosSugeridos": [
+      "termo",
+      "manta gruesa"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "noche",
+      "fin de semana"
+    ],
+    "climaIdeal": [
+      "lluvia",
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1518602164578-cd0074062767?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que historia os hizo sentir mas cerca el uno del otro?"
+  },
+  {
+    "plan": "Receta heredada",
+    "descripcion": "Cocinad una receta de infancia o familiar y compartid el recuerdo detras.",
+    "parteOriginal": "Mientras cocinais, cada uno cuenta una costumbre de su casa que le gustaria mantener.",
+    "presupuesto": "bajo",
+    "costeEstimado": "10-20 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "gastronomico",
+      "profundo",
+      "en casa"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "conoceros",
+      "crear tradiciones"
+    ],
+    "materiales": [
+      "ingredientes",
+      "receta familiar"
+    ],
+    "ayudaCercaDeTi": [
+      "mercados",
+      "supermercados"
+    ],
+    "afiliadosSugeridos": [
+      "libreta de recetas"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que tradicion os gustaria crear a partir de hoy?"
+  },
+  {
+    "plan": "Paseo memory lane",
+    "descripcion": "Volved a lugares significativos de la relacion y cerrad el paseo en un sitio nuevo.",
+    "parteOriginal": "En cada parada decis una cosa que ahora entendeis mejor del otro.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0-10 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "romantico",
+      "profundo",
+      "paseo"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "recordar",
+      "celebrar aniversario"
+    ],
+    "materiales": [
+      "agua",
+      "foto vieja opcional"
+    ],
+    "ayudaCercaDeTi": [
+      "paseos",
+      "cafeterias"
+    ],
+    "afiliadosSugeridos": [
+      "album instantaneo"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "soleado",
+      "cualquiera"
+    ],
+    "nivelIntimidad": "profundo",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que parada os hizo valorar mas lo recorrido juntos?"
+  },
+  {
+    "plan": "Dia sin moviles",
+    "descripcion": "Elegid una franja del dia para desconectar de pantallas y volver al presente.",
+    "parteOriginal": "Solo podeis usar el movil para una foto final y una nota de voz al terminar.",
+    "presupuesto": "gratis",
+    "costeEstimado": "0 EUR",
+    "ubicacion": "mixto",
+    "categoria": [
+      "bienestar",
+      "profundo",
+      "romantico"
+    ],
+    "duracion": "4 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "presencia",
+      "descanso mental"
+    ],
+    "materiales": [
+      "reloj o temporizador"
+    ],
+    "ayudaCercaDeTi": [
+      "parques",
+      "cafeterias",
+      "museos"
+    ],
+    "afiliadosSugeridos": [
+      "camara instantanea"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "mañana",
+      "tarde"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que cambiasteis al estar mas presentes el uno con el otro?"
+  },
+  {
+    "plan": "Cine de version original en casa",
+    "descripcion": "Elegid una pelicula que ninguno haya visto y cread un mini ritual previo.",
+    "parteOriginal": "Antes de darle al play, cada uno predice como se sentira al final.",
+    "presupuesto": "bajo",
+    "costeEstimado": "5-15 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "en casa",
+      "cultura",
+      "noche"
+    ],
+    "duracion": "2-3 horas",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "descansar",
+      "comentar despues"
+    ],
+    "materiales": [
+      "pelicula",
+      "snacks"
+    ],
+    "ayudaCercaDeTi": [
+      "videoclubs",
+      "tiendas gourmet"
+    ],
+    "afiliadosSugeridos": [
+      "proyector portatil"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que escena se quedo mas tiempo con vosotros?"
+  },
+  {
+    "plan": "Ruta de terrazas tematicas",
+    "descripcion": "Elegid dos terrazas con estilos distintos y comparad el ambiente de cada una.",
+    "parteOriginal": "En cada una debéis inventar un brindis con una palabra prohibida.",
+    "presupuesto": "medio",
+    "costeEstimado": "20-40 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "romantico",
+      "noche",
+      "gastronomico"
+    ],
+    "duracion": "2 horas",
+    "energia": "moderado",
+    "necesitaReserva": "opcional",
+    "idealPara": [
+      "salir",
+      "charlar"
+    ],
+    "materiales": [],
+    "ayudaCercaDeTi": [
+      "terrazas",
+      "bares bonitos"
+    ],
+    "afiliadosSugeridos": [
+      "polaroid"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde",
+      "noche"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "ligero",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80",
+    "question": "En que terraza os sentisteis mas vosotros mismos?"
+  },
+  {
+    "plan": "Escapada de lluvia en libreria",
+    "descripcion": "Cuando el tiempo invite a refugiarse, haced una cita lenta entre libros y cafe.",
+    "parteOriginal": "Elegid un poema o frase corta y leedla en voz alta antes de iros.",
+    "presupuesto": "bajo",
+    "costeEstimado": "6-18 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "cultura",
+      "romantico",
+      "lluvia"
+    ],
+    "duracion": "90 min",
+    "energia": "tranquilo",
+    "necesitaReserva": false,
+    "idealPara": [
+      "bajar el ritmo",
+      "sentirse cerca"
+    ],
+    "materiales": [],
+    "ayudaCercaDeTi": [
+      "librerias",
+      "cafeterias"
+    ],
+    "afiliadosSugeridos": [
+      "poemario"
+    ],
+    "dificultadPreparacion": "baja",
+    "momentoIdeal": [
+      "tarde"
+    ],
+    "climaIdeal": [
+      "lluvia"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que frase sentisteis que os describia mejor?"
+  },
+  {
+    "plan": "Amanecer y desayuno takeaway",
+    "descripcion": "Quedad muy pronto, recoged desayuno y ved salir el sol desde un sitio tranquilo.",
+    "parteOriginal": "Cada uno dice algo que quiere empezar a hacer mejor desde hoy.",
+    "presupuesto": "bajo",
+    "costeEstimado": "8-20 EUR",
+    "ubicacion": "exterior",
+    "categoria": [
+      "romantico",
+      "manana",
+      "paseo"
+    ],
+    "duracion": "90 min",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "empezar de cero",
+      "sorprender"
+    ],
+    "materiales": [
+      "cafe",
+      "desayuno",
+      "manta"
+    ],
+    "ayudaCercaDeTi": [
+      "miradores",
+      "playas",
+      "parques"
+    ],
+    "afiliadosSugeridos": [
+      "termo de cafe"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "mañana"
+    ],
+    "climaIdeal": [
+      "soleado"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": false,
+    "aptoLargaDistancia": false,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que nuevo comienzo sentisteis en este plan?"
+  },
+  {
+    "plan": "Cena de intercambio cultural",
+    "descripcion": "Elegid un pais, cocinad algo de alli y ambientad la noche con musica y curiosidades.",
+    "parteOriginal": "Cada uno debe aportar una tradicion de ese lugar que os gustaria probar.",
+    "presupuesto": "medio",
+    "costeEstimado": "18-35 EUR",
+    "ubicacion": "en casa",
+    "categoria": [
+      "gastronomico",
+      "creatividad",
+      "en casa"
+    ],
+    "duracion": "2-3 horas",
+    "energia": "moderado",
+    "necesitaReserva": false,
+    "idealPara": [
+      "viajar sin salir",
+      "aprender"
+    ],
+    "materiales": [
+      "ingredientes",
+      "playlist",
+      "decoracion simple"
+    ],
+    "ayudaCercaDeTi": [
+      "mercados",
+      "tiendas internacionales"
+    ],
+    "afiliadosSugeridos": [
+      "vajilla tematica"
+    ],
+    "dificultadPreparacion": "media",
+    "momentoIdeal": [
+      "noche"
+    ],
+    "climaIdeal": [
+      "cualquiera"
+    ],
+    "nivelIntimidad": "medio",
+    "aptoConHijos": true,
+    "aptoLargaDistancia": true,
+    "premium": true,
+    "cover": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
+    "question": "Que costumbre os apeteceria incorporar a vuestra rutina?"
+  }
+]
