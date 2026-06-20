@@ -48,7 +48,11 @@ describe('MemoryDetailPage', () => {
       </MemoryRouter>,
     );
 
-    const photo = new File(['photo'], 'cris.png', { type: 'image/png' });
+    const photo = new File(
+      [new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])],
+      'cris.png',
+      { type: 'image/png' },
+    );
     const otherPartnerPhoto = useAppStore.getState().memories.find(
       (item) => item.id === memoryId,
     )?.partnerPhotos?.partner_two;

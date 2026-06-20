@@ -140,10 +140,19 @@ Adaptadores adicionales: `LocalDatabase`, `ImageProcessor`, `SyncEngine`, `Netwo
 
 ## Preparacion de imagenes
 
+Politica de entrada y procesado:
+
+- Formatos admitidos: JPEG, PNG y WebP. Se validan MIME, firma real, dimensiones y bytes
+  tanto en cliente como en backend; la extension y el atributo HTML `accept` no bastan.
+- Entrada previa al procesado: maximo 20 MB.
+- Variante `print`: maximo 3508 px en el lado largo, 12 MP y 8 MB. Es suficiente para
+  una pagina A4 a aproximadamente 300 ppp sin conservar capturas 4K o fotos enormes.
+- Variante `optimized`: WebP, lado mayor de 1600 px y calidad 80.
+
 Al seleccionar una foto:
 
-1. Guardar el original sin recomprimir.
-2. Generar `optimized` en WebP, lado mayor de 1600 px y calidad 80.
+1. Validar tipo, firma, dimensiones y tamano; rechazar cualquier contenido no permitido.
+2. Generar `print` respetando sus limites y `optimized` en WebP.
 3. Calcular SHA-256, dimensiones y bytes de ambas variantes.
 4. Guardar ambas en Filesystem y registrar `local_media` como `available`.
 5. Crear `MediaAsset` y encolar la subida si existe una pareja vinculada.

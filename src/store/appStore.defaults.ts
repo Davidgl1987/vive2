@@ -35,7 +35,7 @@ export const createInitialAppStoreState = (): AppStoreState => {
     coupleId,
     onboardingCompleted: false,
     preferences: createDefaultPreferences(),
-    activeChallenge: createActiveChallenge(30),
+    activeChallenge: createActiveChallenge(10),
     completedChallenges: [],
     pendingCelebrationChallengeId: undefined,
     plansUnlocked: 8,

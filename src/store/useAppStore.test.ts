@@ -200,6 +200,7 @@ describe('useAppStore', () => {
   });
 
   it('restores the initial app state on sign out', () => {
+    const initialChallengeGoal = createInitialAppStoreState().activeChallenge.goal;
     const state = useAppStore.getState();
     state.completeOnboarding(state.preferences);
     state.addCustomPlan('Ir al teatro');
@@ -210,7 +211,7 @@ describe('useAppStore', () => {
 
     const nextState = useAppStore.getState();
     expect(nextState.onboardingCompleted).toBe(false);
-    expect(nextState.activeChallenge.goal).toBe(30);
+    expect(nextState.activeChallenge.goal).toBe(initialChallengeGoal);
     expect(nextState.activeChallenge.memoryIds).toHaveLength(0);
     expect(nextState.completedChallenges).toHaveLength(0);
     expect(nextState.memories).toHaveLength(0);
