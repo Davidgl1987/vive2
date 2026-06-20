@@ -8,6 +8,7 @@ import { interpolate, messages } from '../../i18n';
 import { useAppStore } from '../../store/useAppStore';
 import type { CompletedPlan } from '../../types/memory';
 import { formatLongDate } from '../../utils/format';
+import { resolveMemoryPhotos } from '../../utils/memoryPhotos';
 import { findPlanById } from '../../utils/plans';
 
 const albumLinkClass =
@@ -24,13 +25,8 @@ export const MemoriesPage = () => {
       .map((memoryId) => memoriesById.get(memoryId))
       .filter((memory): memory is CompletedPlan => Boolean(memory));
   const activeMemories = resolveMemories(activeChallenge.memoryIds).reverse();
-  const resolveMemoryPhotos = (memory: CompletedPlan) => {
-    const partnerPhotos = Object.values(memory.partnerPhotos ?? {}).filter(Boolean) as string[];
-    if (partnerPhotos.length > 0) return partnerPhotos;
-    if (memory.photos.length > 0) return memory.photos;
-    const planCover = findPlanById(customPlans, memory.planId)?.cover;
-    return planCover ? [planCover] : [];
-  };
+  const getMemoryPhotos = (memory: CompletedPlan) =>
+    resolveMemoryPhotos(memory, findPlanById(customPlans, memory.planId)?.cover);
 
   return (
     <div className="space-y-6 pb-4">
@@ -89,7 +85,7 @@ export const MemoriesPage = () => {
             {completedChallenges.map((challenge) => {
               const challengeMemories = resolveMemories(challenge.memoryIds);
               const challengePhotos = challengeMemories.flatMap((memory) =>
-                resolveMemoryPhotos(memory).map((photo, index) => ({
+                getMemoryPhotos(memory).map((photo, index) => ({
                   id: `${memory.id}-${index}`,
                   memoryId: memory.id,
                   photo,

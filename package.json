@@ -15,8 +15,10 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@capacitor-community/sqlite": "^7.0.3",
     "@capacitor/cli": "^7.0.1",
     "@capacitor/core": "^7.0.1",
+    "@capacitor/filesystem": "^7.0.1",
     "@hookform/resolvers": "^5.1.1",
     "framer-motion": "^12.18.1",
     "lucide-react": "^0.525.0",

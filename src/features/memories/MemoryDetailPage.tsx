@@ -13,6 +13,7 @@ import { useAppStore } from '../../store/useAppStore';
 import { interpolate, messages } from '../../i18n';
 import { fileToDataUrl } from '../../utils/files';
 import { formatLongDate } from '../../utils/format';
+import { getPartnerPhotos, resolveMemoryPhotos } from '../../utils/memoryPhotos';
 import { findPlanById } from '../../utils/plans';
 import { shareMemory } from '../../utils/share';
 
@@ -64,12 +65,14 @@ export const MemoryDetailPage = () => {
   };
   const handleOwnPhoto = async (file: File) => {
     const dataUrl = await fileToDataUrl(file);
+    const partnerPhotos = {
+      ...memory.partnerPhotos,
+      [currentPartnerId]: dataUrl,
+    };
     saveMemory({
       ...memory,
-      partnerPhotos: {
-        ...memory.partnerPhotos,
-        [currentPartnerId]: dataUrl,
-      },
+      partnerPhotos,
+      photos: Object.values(partnerPhotos).filter(Boolean) as string[],
       updatedAt: new Date().toISOString(),
     });
     const partnerName = currentPartnerId === 'partner_one'
@@ -91,7 +94,7 @@ export const MemoryDetailPage = () => {
     saveMemory({
       ...memory,
       partnerPhotos,
-      photos: memory.photos.filter((photo) => photo !== ownPhoto),
+      photos: Object.values(partnerPhotos).filter(Boolean) as string[],
       updatedAt: new Date().toISOString(),
     });
     setFeedback({
@@ -99,10 +102,9 @@ export const MemoryDetailPage = () => {
       message: messages.pages.memoryDetail.photos.removedMessage,
     });
   };
-  const partnerPhotos = Object.values(memory.partnerPhotos ?? {}).filter(Boolean) as string[];
+  const partnerPhotos = getPartnerPhotos(memory);
   const planImage = findPlanById(customPlans, memory.planId)?.cover;
-  const displayPhotos =
-    partnerPhotos.length > 0 ? partnerPhotos : [memory.photos[0] ?? planImage].filter(Boolean);
+  const displayPhotos = resolveMemoryPhotos(memory, planImage);
 
   return (
     <div className="space-y-5 pb-4">

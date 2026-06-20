@@ -7,6 +7,7 @@ import { OwnPlanPhotoButton } from '../../components/memories/OwnPlanPhotoButton
 import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
 import { PageHeader } from '../../components/ui/PageHeader';
+import { PhotoFallback } from '../../components/ui/PhotoFallback';
 import { StarRating } from '../../components/ui/StarRating';
 import { useAppStore } from '../../store/useAppStore';
 import type { CompletedPlan } from '../../types/memory';
@@ -110,10 +111,16 @@ export const CompletePlanPage = () => {
             />
           </label>
 
-          <div>
-            <span className="mb-3 block text-sm font-semibold text-ink">Fotos opcionales</span>
+          <div className="overflow-hidden rounded-[24px] border border-ink/8">
+            <PhotoFallback
+              alt={ownPhoto ? `Foto para ${plan.plan}` : `Portada de ${plan.plan}`}
+              className="h-56 w-full object-cover"
+              src={ownPhoto ?? plan.cover}
+            />
             <OwnPlanPhotoButton
+              embedded
               hasPhoto={Boolean(ownPhoto)}
+              onRemovePhoto={() => setOwnPhoto(undefined)}
               onSelectPhoto={async (file) => setOwnPhoto(await fileToDataUrl(file))}
             />
           </div>

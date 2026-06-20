@@ -3,8 +3,6 @@ import type {
   ChangeBatch,
   CommandResult,
   DeviceRegistration,
-  LocalMedia,
-  MediaVariantKind,
   RegisterDeviceInput,
   RelayDownloadTarget,
   RelayReason,
@@ -31,11 +29,5 @@ export interface ObjectRelayService {
   completeUpload(sessionId: string, variants: UploadedVariant[]): Promise<void>;
   getDownloadTargets(sessionId: string): Promise<RelayDownloadTarget[]>;
   acknowledgeVariant(input: VariantReceiptInput): Promise<void>;
-}
-
-export interface LocalMediaStore {
-  save(assetId: string, variant: MediaVariantKind, bytes: Blob): Promise<LocalMedia>;
-  read(assetId: string, variant: MediaVariantKind): Promise<Blob>;
-  remove(assetId: string): Promise<void>;
 }
 

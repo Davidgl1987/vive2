@@ -106,6 +106,17 @@ de la app mediante `@capacitor/filesystem`. SQLite se encapsula tras un adaptado
 La web conserva un adaptador local de desarrollo, pero no se considera una replica duradera:
 el navegador puede eliminar IndexedDB o Cache Storage.
 
+Implementacion actual del paso local:
+
+- esquema SQLite versionado mediante `PRAGMA user_version` y migraciones transaccionales;
+- adaptador nativo para `@capacitor-community/sqlite` 7.0.3;
+- binarios nativos en el directorio privado `Data` con `@capacitor/filesystem` 7.0.1;
+- binarios web en IndexedDB para conservar el modo de desarrollo;
+- Zustand continua como fuente de verdad del prototipo hasta implementar la sincronizacion.
+
+Los plugins quedan instalados; su verificacion final requiere ejecutar el primer build en
+iOS o Android cuando existan esas plataformas en el proyecto.
+
 ## Contratos de servicios
 
 ```ts
@@ -129,7 +140,7 @@ interface ObjectRelayService {
 }
 
 interface LocalMediaStore {
-  save(assetId: string, variant: MediaVariantKind, bytes: Blob): Promise<LocalMedia>;
+  save(input: SaveLocalMediaInput): Promise<LocalMedia>;
   read(assetId: string, variant: MediaVariantKind): Promise<Blob>;
   remove(assetId: string): Promise<void>;
 }

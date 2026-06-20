@@ -2,6 +2,7 @@ import { CalendarDays, Heart, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { CompletedPlan } from '../../types/memory';
 import { formatLongDate } from '../../utils/format';
+import { resolveMemoryPhotos } from '../../utils/memoryPhotos';
 import { PhotoFallback } from '../ui/PhotoFallback';
 
 export const MemoryCard = ({
@@ -11,9 +12,7 @@ export const MemoryCard = ({
   memory: CompletedPlan;
   planImage?: string;
 }) => {
-  const partnerPhotos = Object.values(memory.partnerPhotos ?? {}).filter(Boolean) as string[];
-  const displayPhotos =
-    partnerPhotos.length > 0 ? partnerPhotos : [memory.photos[0] ?? planImage].filter(Boolean);
+  const displayPhotos = resolveMemoryPhotos(memory, planImage);
 
   return (
     <Link

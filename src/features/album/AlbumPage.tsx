@@ -8,6 +8,7 @@ import { PageHeader } from '../../components/ui/PageHeader';
 import { PhotoFallback } from '../../components/ui/PhotoFallback';
 import { useAppStore } from '../../store/useAppStore';
 import { findPlanById } from '../../utils/plans';
+import { resolveMemoryPhotos } from '../../utils/memoryPhotos';
 
 export const AlbumPage = () => {
   const [searchParams] = useSearchParams();
@@ -28,8 +29,8 @@ export const AlbumPage = () => {
   const albumImages = useMemo(
     () =>
       memories.flatMap((memory) => {
-        const partnerPhotos = Object.values(memory.partnerPhotos ?? {}).filter(Boolean) as string[];
-        const uploadedPhotos = partnerPhotos.length > 0 ? partnerPhotos : memory.photos;
+        const planImage = findPlanById(customPlans, memory.planId)?.cover;
+        const uploadedPhotos = resolveMemoryPhotos(memory, planImage);
         if (uploadedPhotos.length > 0) {
           return uploadedPhotos.map((src, index) => ({
             id: `${memory.id}-${index}`,
@@ -39,15 +40,7 @@ export const AlbumPage = () => {
           }));
         }
 
-        const planImage = findPlanById(customPlans, memory.planId)?.cover;
-        return planImage
-          ? [{
-              id: `${memory.id}-fallback`,
-              alt: memory.planTitle,
-              src: planImage,
-              title: memory.planTitle,
-            }]
-          : [];
+        return [];
       }),
     [customPlans, memories],
   );

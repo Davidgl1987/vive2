@@ -112,4 +112,50 @@ describe('MemoryDetailPage', () => {
     expect(screen.getByText('Foto eliminada')).toBeInTheDocument();
     expect(screen.getByLabelText('Subir mi foto del plan')).toBeInTheDocument();
   });
+
+  it('does not restore the previous photo after changing and removing it', async () => {
+    const state = useAppStore.getState();
+    const originalPhoto = 'data:image/png;base64,original-photo';
+    useAppStore.setState({
+      memories: state.memories.map((item) =>
+        item.id === memoryId
+          ? { ...item, partnerPhotos: { partner_one: originalPhoto }, photos: [originalPhoto] }
+          : item,
+      ),
+    });
+    const planCover = findPlanById(state.customPlans, 'plan_001')?.cover;
+    render(
+      <MemoryRouter initialEntries={[`/memories/${memoryId}`]}>
+        <Routes>
+          <Route path="/memories/:memoryId" element={<MemoryDetailPage />} />
+        </Routes>
+      </MemoryRouter>,
+    );
+
+    fireEvent.change(screen.getByLabelText('Cambiar mi foto'), {
+      target: {
+        files: [
+          new File(
+            [new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])],
+            'replacement.png',
+            { type: 'image/png' },
+          ),
+        ],
+      },
+    });
+    await waitFor(() => {
+      const updated = useAppStore.getState().memories.find((item) => item.id === memoryId)!;
+      expect(updated.partnerPhotos?.partner_one).not.toBe(originalPhoto);
+      expect(updated.photos).not.toContain(originalPhoto);
+    });
+
+    fireEvent.click(screen.getByRole('button', { name: 'Quitar mi foto' }));
+
+    await waitFor(() => {
+      const updated = useAppStore.getState().memories.find((item) => item.id === memoryId)!;
+      expect(updated.partnerPhotos).toEqual({});
+      expect(updated.photos).toEqual([]);
+    });
+    expect(screen.getByAltText('Picnic bajo las estrellas')).toHaveAttribute('src', planCover);
+  });
 });
